@@ -1,0 +1,735 @@
+WARNING 2018-11-24 11:58:34,795 log 228 Not Found: /
+WARNING 2018-11-24 11:58:34,796 basehttp 124 "GET / HTTP/1.1" 404 2023
+WARNING 2018-11-24 11:58:34,992 log 228 Not Found: /favicon.ico
+WARNING 2018-11-24 11:58:34,993 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2074
+WARNING 2018-11-24 11:58:48,483 log 228 Not Found: /Image_code/ewqewq
+WARNING 2018-11-24 11:58:48,484 basehttp 124 "GET /Image_code/ewqewq HTTP/1.1" 404 2092
+WARNING 2018-11-24 12:02:11,894 log 228 Not Found: /
+WARNING 2018-11-24 12:02:11,896 basehttp 124 "GET / HTTP/1.1" 404 2110
+WARNING 2018-11-24 12:02:21,843 log 228 Not Found: /image_code/3213213
+WARNING 2018-11-24 12:02:21,845 basehttp 124 "GET /image_code/3213213 HTTP/1.1" 404 2182
+INFO 2018-11-24 12:02:57,048 basehttp 124 "GET /image_codes/3213213 HTTP/1.1" 301 0
+ERROR 2018-11-24 12:02:57,229 log 228 Internal Server Error: /image_codes/3213213/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 18, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2018-11-24 12:02:57,236 basehttp 124 "GET /image_codes/3213213/ HTTP/1.1" 500 89564
+WARNING 2018-11-24 12:13:41,973 log 228 Not Found: /
+WARNING 2018-11-24 12:13:41,975 basehttp 124 "GET / HTTP/1.1" 404 2110
+INFO 2018-11-24 12:13:50,723 basehttp 124 "GET /image_codes/2313 HTTP/1.1" 301 0
+ERROR 2018-11-24 12:13:50,891 log 228 Internal Server Error: /image_codes/2313/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 18, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'jianyue.utils.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2018-11-24 12:13:50,898 basehttp 124 "GET /image_codes/2313/ HTTP/1.1" 500 89608
+WARNING 2018-11-24 12:14:51,721 log 228 Not Found: /
+WARNING 2018-11-24 12:14:51,722 basehttp 124 "GET / HTTP/1.1" 404 2110
+INFO 2018-11-24 12:14:59,251 basehttp 124 "GET /image_codes/3213 HTTP/1.1" 301 0
+INFO 2018-11-24 12:14:59,311 basehttp 124 "GET /image_codes/3213/ HTTP/1.1" 200 3277
+INFO 2018-11-24 12:16:20,900 basehttp 124 "GET /image_codes/321321 HTTP/1.1" 301 0
+INFO 2018-11-24 12:16:20,912 basehttp 124 "GET /image_codes/321321/ HTTP/1.1" 200 3113
+INFO 2018-11-24 12:17:05,724 basehttp 124 "GET /image_codes/3aqda321 HTTP/1.1" 301 0
+INFO 2018-11-24 12:17:05,764 basehttp 124 "GET /image_codes/3aqda321/ HTTP/1.1" 200 3014
+INFO 2018-11-24 14:23:41,780 basehttp 124 "GET /image_codes/8f93cfd0-f54a-4590-b2d2-f36517e39f46/ HTTP/1.1" 200 3412
+INFO 2018-11-24 14:23:41,781 basehttp 124 "GET /image_codes/28be5f5e-3010-4f89-aed3-03f24cde424c/ HTTP/1.1" 200 3213
+INFO 2018-11-24 14:23:41,781 basehttp 124 "GET /image_codes/d6290f63-4912-425e-8e63-1e8101fb83cd/ HTTP/1.1" 200 2991
+INFO 2018-11-24 14:23:44,363 basehttp 124 "GET /image_codes/13d37a8b-2678-43cc-96cd-12a2822bd46e/ HTTP/1.1" 200 3072
+INFO 2018-11-24 14:24:35,951 basehttp 124 "GET /image_codes/3fc652d4-a31f-44b1-af46-1f902b8b2555/ HTTP/1.1" 200 2830
+INFO 2018-11-24 14:24:36,039 basehttp 124 "GET /image_codes/b9604145-3ea6-453b-8209-462d7651419f/ HTTP/1.1" 200 3633
+INFO 2018-11-24 14:24:36,045 basehttp 124 "GET /image_codes/57210822-a7b1-4865-aa15-0f2e845d810a/ HTTP/1.1" 200 3478
+INFO 2018-11-24 14:24:36,093 basehttp 124 "GET /image_codes/ce52d2ff-76f7-4541-a759-3d9189f5d88e/ HTTP/1.1" 200 2937
+INFO 2018-11-24 14:24:39,031 basehttp 124 "GET /image_codes/31bf4d43-b148-4924-ac70-a505e2bc59d3/ HTTP/1.1" 200 3394
+INFO 2018-11-24 14:25:25,097 basehttp 124 "GET /image_codes/0be71cbb-e00b-4abc-a4d2-26a8bb2b63ac/ HTTP/1.1" 200 2962
+INFO 2018-11-24 14:25:25,173 basehttp 124 "GET /image_codes/8a4b10aa-57c2-43aa-baba-e0262f917528/ HTTP/1.1" 200 3452
+INFO 2018-11-24 14:25:25,185 basehttp 124 "GET /image_codes/abecc406-7875-459d-b749-32a5be7c8ce1/ HTTP/1.1" 200 3094
+INFO 2018-11-24 14:25:25,226 basehttp 124 "GET /image_codes/52349a74-5935-4b42-b077-324a54f65518/ HTTP/1.1" 200 3377
+INFO 2018-11-24 14:25:25,231 basehttp 124 "GET /image_codes/fc23a4e3-f278-42c9-951d-b45f678fb5dc/ HTTP/1.1" 200 3327
+INFO 2018-11-24 14:26:44,645 basehttp 124 "GET /image_codes/17c8685e-5f98-49a9-87bf-cb8c5e404fc2/ HTTP/1.1" 200 3359
+INFO 2018-11-24 14:26:48,018 basehttp 124 "GET /image_codes/f57a5cdf-ba0f-448b-8e81-1cebe6f54067/ HTTP/1.1" 200 3196
+INFO 2018-11-24 14:26:49,270 basehttp 124 "GET /image_codes/7c65e997-c757-43da-bfe3-2e841e3cd561/ HTTP/1.1" 200 3415
+INFO 2018-11-24 14:26:49,969 basehttp 124 "GET /image_codes/51c0010c-90bc-475c-94b2-519f03659ac5/ HTTP/1.1" 200 3286
+INFO 2018-11-24 14:26:50,638 basehttp 124 "GET /image_codes/e103fb08-593f-444c-81ec-47c69bd553a1/ HTTP/1.1" 200 3232
+INFO 2018-11-24 14:26:51,064 basehttp 124 "GET /image_codes/8ba4bd18-5c06-4acf-8405-6db1d01d922d/ HTTP/1.1" 200 3389
+INFO 2018-11-24 14:26:51,473 basehttp 124 "GET /image_codes/5383b403-1aee-4c60-ad88-f7888158ad7f/ HTTP/1.1" 200 3055
+INFO 2018-11-24 14:26:51,816 basehttp 124 "GET /image_codes/3362b566-8fad-4a96-be44-6bdb28e6c75c/ HTTP/1.1" 200 3651
+INFO 2018-11-24 14:26:52,150 basehttp 124 "GET /image_codes/36bfd599-56d2-4ee6-af16-9a1cd8a2b66c/ HTTP/1.1" 200 3121
+INFO 2018-11-24 14:26:52,513 basehttp 124 "GET /image_codes/ebc79391-22b5-43f1-b4f3-7c8d473a9c0e/ HTTP/1.1" 200 3201
+INFO 2018-11-24 14:26:52,901 basehttp 124 "GET /image_codes/c40d867b-7b8b-46d0-82f8-46f76c37b68b/ HTTP/1.1" 200 3340
+INFO 2018-11-24 14:26:53,262 basehttp 124 "GET /image_codes/1c6156f9-727d-4bcc-bcd7-ac2bb000ddd6/ HTTP/1.1" 200 3143
+INFO 2018-11-24 14:26:53,606 basehttp 124 "GET /image_codes/ec18bb71-da9b-4b1e-87fb-e885868d4be2/ HTTP/1.1" 200 3168
+INFO 2018-11-24 14:26:53,965 basehttp 124 "GET /image_codes/7de32ed8-f6e1-459c-b12b-46edfea327bc/ HTTP/1.1" 200 3279
+INFO 2018-11-24 14:26:54,396 basehttp 124 "GET /image_codes/9c1d523b-5652-4654-9d6a-d682baa15ae0/ HTTP/1.1" 200 2757
+INFO 2018-11-24 14:26:54,912 basehttp 124 "GET /image_codes/ba5025a6-8d83-4594-a652-4834d0075dbd/ HTTP/1.1" 200 3397
+INFO 2018-11-24 14:26:55,430 basehttp 124 "GET /image_codes/b031d0a4-e6c2-4e53-95ad-14afe77a4cb1/ HTTP/1.1" 200 2923
+INFO 2018-11-24 14:26:56,431 basehttp 124 "GET /image_codes/054bed96-5235-4a73-93be-93319f8c14c1/ HTTP/1.1" 200 3496
+INFO 2018-11-24 14:26:56,950 basehttp 124 "GET /image_codes/5b000a77-279e-4f52-a241-96542ab6988e/ HTTP/1.1" 200 3326
+INFO 2018-11-24 14:26:57,518 basehttp 124 "GET /image_codes/c29727da-b706-432e-a7c6-e57b0b2a4391/ HTTP/1.1" 200 3091
+INFO 2018-11-24 14:26:58,006 basehttp 124 "GET /image_codes/98f55abd-f8e2-4390-90a4-efe0cf1ba19b/ HTTP/1.1" 200 3319
+INFO 2018-11-24 14:26:58,510 basehttp 124 "GET /image_codes/cfb31f2b-b248-47b9-9e60-6c97716df45c/ HTTP/1.1" 200 3149
+INFO 2018-11-24 14:27:06,527 basehttp 124 "GET /image_codes/1c775b00-1aef-4e29-b686-ccae1a50ae3a/ HTTP/1.1" 200 3483
+INFO 2018-11-24 14:27:08,303 basehttp 124 "GET /image_codes/c6339230-60bc-4ba9-9a46-da9283b872eb/ HTTP/1.1" 200 3026
+INFO 2018-11-24 14:27:41,834 basehttp 124 "GET /image_codes/4632a81d-cf4b-4ed2-b83c-e1679e5d33c9/ HTTP/1.1" 200 3368
+INFO 2018-11-24 14:27:44,627 basehttp 124 "GET /image_codes/6aee207d-de81-4f71-84d4-9c0724c787a3/ HTTP/1.1" 200 3054
+INFO 2018-11-24 14:27:48,139 basehttp 124 "GET /image_codes/bd7f5864-ee2a-4a2e-b588-cb3e0cd066f9/ HTTP/1.1" 200 3334
+INFO 2018-11-24 14:29:12,020 basehttp 124 "GET /image_codes/41206137-ebbe-4b78-8a40-8b0f2a1cb0e9/ HTTP/1.1" 200 3257
+INFO 2018-11-24 17:25:29,379 basehttp 124 "GET /image_codes/53064616-e1a3-4a38-8cdb-4cad22117d3e/ HTTP/1.1" 200 2972
+INFO 2018-11-24 17:25:30,644 basehttp 124 "GET /image_codes/e2e8b9b7-5b83-47ac-9d5d-599c6627bed0/ HTTP/1.1" 200 3001
+INFO 2018-11-24 17:25:31,478 basehttp 124 "GET /image_codes/26c36283-15d2-4df9-a935-4291471302d9/ HTTP/1.1" 200 3382
+INFO 2018-11-24 17:25:32,111 basehttp 124 "GET /image_codes/03bb54ae-eccc-48c7-b53d-c63981a134f6/ HTTP/1.1" 200 3128
+WARNING 2018-11-24 17:28:02,634 log 228 Not Found: /
+WARNING 2018-11-24 17:28:02,638 basehttp 124 "GET / HTTP/1.1" 404 2110
+WARNING 2018-11-24 17:28:02,937 log 228 Not Found: /favicon.ico
+WARNING 2018-11-24 17:28:02,943 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2161
+WARNING 2018-11-24 17:29:32,940 log 228 Not Found: /
+WARNING 2018-11-24 17:29:32,942 basehttp 124 "GET / HTTP/1.1" 404 2277
+WARNING 2018-11-24 17:30:01,993 log 228 Not Found: /sms_code/18389266585/
+WARNING 2018-11-24 17:30:01,995 basehttp 124 "GET /sms_code/18389266585/?image_code_id=1&text=2 HTTP/1.1" 404 2385
+WARNING 2018-11-24 17:31:06,081 log 228 Not Found: /sms_code/18389266585/
+WARNING 2018-11-24 17:31:06,088 basehttp 124 "GET /sms_code/18389266585/?image_code_id=1&text=2 HTTP/1.1" 404 2402
+WARNING 2018-11-24 17:31:29,953 log 228 Not Found: /sms_code/18389266585/
+WARNING 2018-11-24 17:31:29,954 basehttp 124 "GET /sms_code/18389266585/?image_code_id=1&text=2 HTTP/1.1" 404 2397
+WARNING 2018-11-24 17:32:17,674 log 228 Not Found: /sms_code/18389266585/
+WARNING 2018-11-24 17:32:17,675 basehttp 124 "GET /sms_code/18389266585/?image_code_id=1&text=2 HTTP/1.1" 404 2431
+WARNING 2018-11-24 17:32:44,463 log 228 Not Found: /sms_code/18389266585/
+WARNING 2018-11-24 17:32:44,465 basehttp 124 "GET /sms_code/18389266585/?image_code_id=1&text=2 HTTP/1.1" 404 2397
+ERROR 2018-11-24 17:33:00,322 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-24 17:33:00,334 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=1&text=2 HTTP/1.1" 500 82518
+INFO 2018-11-24 17:39:30,473 basehttp 124 "GET /image_codes/cbaf4a8c-219c-421f-b565-802549b2c9c4/ HTTP/1.1" 200 3343
+INFO 2018-11-24 17:40:08,818 basehttp 124 "GET /sms_codes/1838956?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=b0nq HTTP/1.1" 301 0
+WARNING 2018-11-24 17:40:08,877 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:40:08,879 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=b0nq HTTP/1.1" 400 5506
+INFO 2018-11-24 17:40:08,913 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-24 17:40:08,913 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-24 17:40:08,914 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-24 17:40:08,916 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-24 17:40:08,916 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-24 17:40:08,917 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-24 17:40:08,955 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-24 17:40:08,957 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-24 17:40:08,958 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-24 17:40:08,958 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-24 17:40:09,096 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-11-24 17:40:18,143 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:40:18,144 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5506
+WARNING 2018-11-24 17:40:34,457 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:40:34,458 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5506
+WARNING 2018-11-24 17:41:14,175 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:41:14,176 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5506
+INFO 2018-11-24 17:41:39,810 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 200 5499
+WARNING 2018-11-24 17:41:48,921 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:41:48,922 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BO21 HTTP/1.1" 400 5506
+INFO 2018-11-24 17:42:00,495 basehttp 124 "GET /image_codes/adbadf75-1940-43e5-ba3c-a4ecb8004e56/ HTTP/1.1" 200 3013
+INFO 2018-11-24 17:44:50,789 basehttp 124 "GET /image_codes/0a6c9453-9d77-4b1f-8a12-4984f1978447/ HTTP/1.1" 200 3348
+INFO 2018-11-24 17:44:51,285 basehttp 124 "GET /image_codes/dbfe2820-ffc5-4b6b-9e6c-884bf397608c/ HTTP/1.1" 200 3350
+INFO 2018-11-24 17:44:51,563 basehttp 124 "GET /image_codes/ea57cfa9-78f7-444d-894a-7df441c4b5bc/ HTTP/1.1" 200 3257
+INFO 2018-11-24 17:44:51,691 basehttp 124 "GET /image_codes/21be41f8-618d-483c-a65e-86c8aa290b55/ HTTP/1.1" 200 3185
+INFO 2018-11-24 17:44:51,836 basehttp 124 "GET /image_codes/a35e305f-1bf1-4a5f-a95d-0901602c8ef8/ HTTP/1.1" 200 3449
+INFO 2018-11-24 17:44:52,038 basehttp 124 "GET /image_codes/cabe75d9-7744-48bc-9602-74d6d5d045a6/ HTTP/1.1" 200 2914
+INFO 2018-11-24 17:44:52,187 basehttp 124 "GET /image_codes/653777a3-ed86-4f1e-8a85-36dff0dffa14/ HTTP/1.1" 200 3310
+INFO 2018-11-24 17:44:52,349 basehttp 124 "GET /image_codes/9fcfceb5-9aee-42c3-a691-3723b47e3ade/ HTTP/1.1" 200 3368
+INFO 2018-11-24 17:44:52,491 basehttp 124 "GET /image_codes/b18b7195-b963-42a4-a563-1e14c12aa14c/ HTTP/1.1" 200 3088
+INFO 2018-11-24 17:44:52,675 basehttp 124 "GET /image_codes/428af593-209c-4864-9847-a091bb7b54e2/ HTTP/1.1" 200 3227
+INFO 2018-11-24 17:44:52,988 basehttp 124 "GET /image_codes/3222e28b-90bc-4f02-a404-0696a697afa2/ HTTP/1.1" 200 3330
+INFO 2018-11-24 17:44:53,140 basehttp 124 "GET /image_codes/90152fef-ea41-43fa-bdc6-5f60e29c4aa1/ HTTP/1.1" 200 3260
+INFO 2018-11-24 17:44:53,299 basehttp 124 "GET /image_codes/8a9acd3e-83c8-4959-86a5-767d26836f00/ HTTP/1.1" 200 2839
+INFO 2018-11-24 17:44:53,541 basehttp 124 "GET /image_codes/405baa21-dcd1-408d-8e84-7a802981b5c3/ HTTP/1.1" 200 2845
+INFO 2018-11-24 17:44:53,691 basehttp 124 "GET /image_codes/5e7ef4ce-ebda-41fa-a5f7-46f28c5875fc/ HTTP/1.1" 200 3069
+INFO 2018-11-24 17:44:53,805 basehttp 124 "GET /image_codes/c4785251-2f57-4c62-a0b5-ea5262e1542f/ HTTP/1.1" 200 3321
+INFO 2018-11-24 17:44:54,459 basehttp 124 "GET /image_codes/df1e888b-691e-42cc-a53a-6d611b0bd9d3/ HTTP/1.1" 200 3167
+INFO 2018-11-24 17:44:55,084 basehttp 124 "GET /image_codes/04dc5925-1316-42c2-863b-3b3b5959cb2f/ HTTP/1.1" 200 3186
+INFO 2018-11-24 17:44:55,394 basehttp 124 "GET /image_codes/718cd329-80fc-4ae3-be46-10c788afee2d/ HTTP/1.1" 200 3059
+INFO 2018-11-24 17:44:55,619 basehttp 124 "GET /image_codes/3c609146-785c-40a4-864f-c7ba768a0766/ HTTP/1.1" 200 3157
+INFO 2018-11-24 17:44:55,795 basehttp 124 "GET /image_codes/7374887d-8f55-4394-9c27-061fcb15345d/ HTTP/1.1" 200 3268
+INFO 2018-11-24 17:44:55,943 basehttp 124 "GET /image_codes/30840621-3271-4c82-a068-b35001958beb/ HTTP/1.1" 200 2947
+INFO 2018-11-24 17:44:56,077 basehttp 124 "GET /image_codes/2604c6a4-024b-4db1-a371-20c24348da64/ HTTP/1.1" 200 3192
+INFO 2018-11-24 17:44:56,213 basehttp 124 "GET /image_codes/4daa586a-cd42-4d9e-9887-cf50cb015577/ HTTP/1.1" 200 3114
+INFO 2018-11-24 17:44:56,492 basehttp 124 "GET /image_codes/2bf6bfa3-0385-45e9-b209-a0ba9f077ea9/ HTTP/1.1" 200 3211
+ERROR 2018-11-24 17:47:17,548 log 228 Internal Server Error: /sms_codes/1838956/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 45, in get
+    image_text = redis_conn.get("img_%s" % image_code_id).decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-11-24 17:47:17,562 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 500 91478
+WARNING 2018-11-24 17:49:28,122 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:49:28,123 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5525
+WARNING 2018-11-24 17:49:32,133 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-24 17:49:32,134 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5525
+INFO 2018-11-24 17:49:35,375 basehttp 124 "GET /image_codes/d51f7859-e82d-4388-96b7-81d5f80ee202/ HTTP/1.1" 200 2941
+INFO 2018-11-24 17:49:52,387 basehttp 124 "GET /sms_codes/1838956/?image_code_id=d51f7859-e82d-4388-96b7-81d5f80ee202&text=JESC HTTP/1.1" 200 5499
+INFO 2018-11-24 17:50:23,824 basehttp 124 "GET /sms_codes/1838956/?image_code_id=d51f7859-e82d-4388-96b7-81d5f80ee202&text=JESC HTTP/1.1" 200 5499
+INFO 2018-11-24 17:50:28,246 basehttp 124 "GET /sms_codes/1838956/?image_code_id=d51f7859-e82d-4388-96b7-81d5f80ee202&text=JESC HTTP/1.1" 200 5499
+INFO 2018-11-24 17:51:58,668 basehttp 124 "GET /image_codes/595efc63-c249-4ae5-9956-6f888c8846c9/ HTTP/1.1" 200 3462
+INFO 2018-11-24 17:52:17,071 basehttp 124 "GET /image_codes/84ac07ed-2955-4317-8aaa-5f5ab0f9cfd2/ HTTP/1.1" 200 3243
+INFO 2018-11-24 17:52:19,848 basehttp 124 "GET /image_codes/45d8b738-8e0e-441c-8ea9-eeb081656ccc/ HTTP/1.1" 200 3450
+INFO 2018-11-24 17:52:20,685 basehttp 124 "GET /image_codes/6bded602-a93a-4462-9766-1a1797ad20cc/ HTTP/1.1" 200 3018
+INFO 2018-11-24 17:52:21,264 basehttp 124 "GET /image_codes/68598498-6d2a-49a3-8d4a-7000abd5124d/ HTTP/1.1" 200 3089
+INFO 2018-11-24 17:52:21,676 basehttp 124 "GET /image_codes/933c865c-5f9d-4249-ae32-923205f2276d/ HTTP/1.1" 200 3021
+INFO 2018-11-24 17:52:22,035 basehttp 124 "GET /image_codes/bf5c3480-b6de-46e2-a524-fbc51adb1012/ HTTP/1.1" 200 3279
+INFO 2018-11-24 17:52:22,395 basehttp 124 "GET /image_codes/3b4f849b-a275-48ee-8e8d-5508dda5fd15/ HTTP/1.1" 200 3314
+INFO 2018-11-24 17:52:22,744 basehttp 124 "GET /image_codes/a311806e-98f5-4450-9f19-326f466297bd/ HTTP/1.1" 200 2993
+INFO 2018-11-24 17:52:23,111 basehttp 124 "GET /image_codes/f6d5cce3-e98c-499d-b190-760cb66244cf/ HTTP/1.1" 200 3364
+INFO 2018-11-24 17:54:44,177 basehttp 124 "GET /image_codes/2c213206-9e92-43d5-9a2f-77bc14a67d55/ HTTP/1.1" 200 2807
+INFO 2018-11-24 17:54:46,204 basehttp 124 "GET /image_codes/c447b935-42b7-43fc-b771-38cd5ea0d497/ HTTP/1.1" 200 3575
+INFO 2018-11-24 17:54:46,502 basehttp 124 "GET /image_codes/88a0b0de-a750-42ed-bebc-f258eced9e2c/ HTTP/1.1" 200 3351
+INFO 2018-11-24 17:54:46,702 basehttp 124 "GET /image_codes/30cd377b-bd62-42b6-9554-0c55d8f6b293/ HTTP/1.1" 200 3400
+INFO 2018-11-24 17:54:46,871 basehttp 124 "GET /image_codes/268afc06-2f5d-4ea1-8e00-8e42266a9ef4/ HTTP/1.1" 200 2970
+INFO 2018-11-24 17:54:47,175 basehttp 124 "GET /image_codes/7da51489-8195-4514-8181-57f17ef544c5/ HTTP/1.1" 200 3005
+INFO 2018-11-24 17:54:47,374 basehttp 124 "GET /image_codes/274f9f1e-e68c-4c01-bd5e-fa3105248316/ HTTP/1.1" 200 2733
+INFO 2018-11-24 17:54:47,518 basehttp 124 "GET /image_codes/6db88e51-8bd6-4cc3-bc58-6b7737b031bc/ HTTP/1.1" 200 3092
+INFO 2018-11-24 17:54:47,638 basehttp 124 "GET /image_codes/c7b1c58e-2147-4363-a8ca-7ff1182a9eff/ HTTP/1.1" 200 3013
+INFO 2018-11-24 17:54:47,877 basehttp 124 "GET /image_codes/24d1481c-d48b-45e3-87ae-b02c5866197a/ HTTP/1.1" 200 3154
+INFO 2018-11-24 17:54:48,031 basehttp 124 "GET /image_codes/c2294f14-47ee-444f-9e7b-b0adff8f0ec3/ HTTP/1.1" 200 3318
+INFO 2018-11-24 17:54:48,152 basehttp 124 "GET /image_codes/8f434cb0-0a81-4df0-9647-c00a59a354c7/ HTTP/1.1" 200 3290
+INFO 2018-11-24 17:54:48,282 basehttp 124 "GET /image_codes/71ae4ce8-080b-498e-acb7-b06559405edb/ HTTP/1.1" 200 3063
+INFO 2018-11-24 17:54:48,381 basehttp 124 "GET /image_codes/3f5bfa3e-e184-4597-9c68-17e8ce2acabe/ HTTP/1.1" 200 2996
+INFO 2018-11-24 17:54:48,497 basehttp 124 "GET /image_codes/77ce9208-9dcd-49a8-b630-16e483786675/ HTTP/1.1" 200 3268
+INFO 2018-11-24 17:54:48,632 basehttp 124 "GET /image_codes/733b9765-1aae-4562-8fb1-4de2d5dc6a9a/ HTTP/1.1" 200 3569
+INFO 2018-11-24 17:54:48,764 basehttp 124 "GET /image_codes/3c98f427-5fd4-4000-8925-4ed468ff7963/ HTTP/1.1" 200 2933
+INFO 2018-11-24 17:54:48,902 basehttp 124 "GET /image_codes/64cb00f6-d9bb-4863-b942-8fc074e1ad43/ HTTP/1.1" 200 3701
+INFO 2018-11-24 17:54:49,013 basehttp 124 "GET /image_codes/7f2d6957-3a24-4e60-9062-ed658018cf64/ HTTP/1.1" 200 3422
+INFO 2018-11-24 17:54:49,136 basehttp 124 "GET /image_codes/0f9312ef-b265-448f-9c0a-1f9bacf7e4ed/ HTTP/1.1" 200 3785
+INFO 2018-11-24 17:54:49,385 basehttp 124 "GET /image_codes/bbff4586-a037-4eea-9232-1cb75ddcdf2a/ HTTP/1.1" 200 3224
+INFO 2018-11-24 17:54:49,488 basehttp 124 "GET /image_codes/e1d2057f-9545-4b2b-9762-41f912f74620/ HTTP/1.1" 200 3299
+INFO 2018-11-24 17:54:49,596 basehttp 124 "GET /image_codes/97943104-524e-4b1a-9b0d-8605bcbecd8a/ HTTP/1.1" 200 3177
+INFO 2018-11-24 17:54:49,724 basehttp 124 "GET /image_codes/bdd2cc8c-cd77-43da-82b7-413ee4df175b/ HTTP/1.1" 200 3385
+INFO 2018-11-24 17:54:49,860 basehttp 124 "GET /image_codes/de96aa2d-b0fa-4c35-aff0-0d8937567796/ HTTP/1.1" 200 2892
+INFO 2018-11-24 17:54:49,998 basehttp 124 "GET /image_codes/86310bf7-4cfd-4fbe-b033-d8daf9af136f/ HTTP/1.1" 200 3445
+INFO 2018-11-24 17:54:50,145 basehttp 124 "GET /image_codes/0da273e6-b352-4c1e-8f7c-4ac8f10d4367/ HTTP/1.1" 200 3369
+INFO 2018-11-24 17:54:50,287 basehttp 124 "GET /image_codes/109bb8ed-c28d-4644-a4dd-690651ad6220/ HTTP/1.1" 200 2933
+INFO 2018-11-24 17:54:50,399 basehttp 124 "GET /image_codes/472366ff-05db-4ef9-9347-aec4e56ea538/ HTTP/1.1" 200 3227
+INFO 2018-11-24 17:54:50,541 basehttp 124 "GET /image_codes/7cff6393-e04c-418f-9fd2-694f9ebb5fcb/ HTTP/1.1" 200 3150
+INFO 2018-11-24 17:54:50,666 basehttp 124 "GET /image_codes/4a876519-8431-4aa5-952f-f9be1c4e168f/ HTTP/1.1" 200 3256
+INFO 2018-11-24 17:54:50,774 basehttp 124 "GET /image_codes/affa9a96-626d-4230-84d2-1d67d04d38c2/ HTTP/1.1" 200 3139
+INFO 2018-11-24 17:54:50,903 basehttp 124 "GET /image_codes/8e488a43-30fb-419e-95ae-c7e272d77747/ HTTP/1.1" 200 3231
+INFO 2018-11-24 17:54:51,038 basehttp 124 "GET /image_codes/5760f98e-63dc-44c3-9ba4-4b7bc7207739/ HTTP/1.1" 200 3564
+INFO 2018-11-24 17:54:51,176 basehttp 124 "GET /image_codes/bbbed272-2a9b-4fa0-adcd-fc2449338dbd/ HTTP/1.1" 200 3291
+INFO 2018-11-24 17:54:51,287 basehttp 124 "GET /image_codes/bb54a686-af98-49a2-ba0c-447646ab1032/ HTTP/1.1" 200 2575
+INFO 2018-11-24 17:54:51,423 basehttp 124 "GET /image_codes/3d925d8e-e752-418e-b480-fe8ff6aa812a/ HTTP/1.1" 200 3143
+INFO 2018-11-24 17:54:51,558 basehttp 124 "GET /image_codes/c1ee1504-b6a2-411a-bc1d-88e043d33c4f/ HTTP/1.1" 200 3258
+INFO 2018-11-24 17:54:51,679 basehttp 124 "GET /image_codes/0da378f4-3ab7-4fba-a515-43450cb617e4/ HTTP/1.1" 200 3600
+INFO 2018-11-24 17:54:51,813 basehttp 124 "GET /image_codes/5777c868-fa88-46e6-b3dd-062924e7bab5/ HTTP/1.1" 200 3252
+INFO 2018-11-24 17:54:52,063 basehttp 124 "GET /image_codes/646126ec-91cd-4fd5-a40d-e6cbc23ebfcd/ HTTP/1.1" 200 3210
+INFO 2018-11-24 17:54:52,190 basehttp 124 "GET /image_codes/fb8f17a3-3e9b-408e-8d08-638e2c5b104a/ HTTP/1.1" 200 3203
+INFO 2018-11-24 17:54:52,327 basehttp 124 "GET /image_codes/e7abb1db-447f-4507-b064-0e38a187d702/ HTTP/1.1" 200 2942
+INFO 2018-11-24 17:54:52,465 basehttp 124 "GET /image_codes/6eb9be89-81ed-457d-b562-26d89b7dcdb5/ HTTP/1.1" 200 3131
+INFO 2018-11-24 17:54:52,613 basehttp 124 "GET /image_codes/490c4418-46d4-4d9a-969e-32ca516a6fcc/ HTTP/1.1" 200 3152
+INFO 2018-11-24 17:54:52,749 basehttp 124 "GET /image_codes/1cb5dd8f-d10e-419a-8c34-caaf895bc5eb/ HTTP/1.1" 200 3230
+INFO 2018-11-24 17:54:52,876 basehttp 124 "GET /image_codes/df1f4dad-2863-48e3-8fa5-b599166c0d1e/ HTTP/1.1" 200 2973
+INFO 2018-11-24 17:54:53,013 basehttp 124 "GET /image_codes/1112eb98-2ac9-4a5f-b2a2-eb0128508ed4/ HTTP/1.1" 200 3195
+INFO 2018-11-24 17:54:53,158 basehttp 124 "GET /image_codes/c30bb38c-1745-4105-9780-a807cecaa3d0/ HTTP/1.1" 200 2952
+INFO 2018-11-24 17:54:53,294 basehttp 124 "GET /image_codes/7f57682c-d949-4363-b94e-45025c5e30f0/ HTTP/1.1" 200 3398
+INFO 2018-11-24 17:54:53,438 basehttp 124 "GET /image_codes/c96c5ab9-9e35-4819-a95d-72f5bbb66927/ HTTP/1.1" 200 2841
+INFO 2018-11-24 17:54:53,584 basehttp 124 "GET /image_codes/98ec42c0-1b1b-463f-aeb7-966aa3154580/ HTTP/1.1" 200 2829
+INFO 2018-11-24 17:54:53,702 basehttp 124 "GET /image_codes/1eec8ce0-8dfb-4b78-851d-0041381713ce/ HTTP/1.1" 200 3061
+INFO 2018-11-24 17:54:53,838 basehttp 124 "GET /image_codes/460404e3-6e96-4f43-9e6a-86eedc484313/ HTTP/1.1" 200 3469
+INFO 2018-11-24 17:54:53,974 basehttp 124 "GET /image_codes/ebf0b530-f023-42bc-8270-73e78f5e49f6/ HTTP/1.1" 200 3095
+INFO 2018-11-24 17:54:54,214 basehttp 124 "GET /image_codes/78ed7811-9a3c-41b2-af41-670c383b9bff/ HTTP/1.1" 200 2827
+INFO 2018-11-24 17:54:54,334 basehttp 124 "GET /image_codes/674ebf80-e7b1-49c0-b508-ff1e77e96bad/ HTTP/1.1" 200 2944
+INFO 2018-11-24 17:54:54,462 basehttp 124 "GET /image_codes/25cca089-0c6e-4345-89e5-5eef764f51b6/ HTTP/1.1" 200 3259
+INFO 2018-11-24 17:54:54,599 basehttp 124 "GET /image_codes/4a1a2193-d9ba-4970-a65e-779435f6fa09/ HTTP/1.1" 200 2887
+INFO 2018-11-24 17:54:54,718 basehttp 124 "GET /image_codes/5da35ac0-8c76-4f08-95df-e6d6f6f62710/ HTTP/1.1" 200 2860
+INFO 2018-11-24 17:54:54,831 basehttp 124 "GET /image_codes/e7f7c62a-83bc-4f35-b5dc-baef22d5ff47/ HTTP/1.1" 200 3116
+INFO 2018-11-24 18:01:05,938 basehttp 124 "GET /image_codes/dacc8298-e9d5-4540-bd22-d39eb3924470/ HTTP/1.1" 200 2814
+INFO 2018-11-24 18:01:06,046 basehttp 124 "GET /image_codes/e4c25ef6-b8d2-4eca-bef2-40c02f8aa6d4/ HTTP/1.1" 200 3182
+INFO 2018-11-24 18:01:06,170 basehttp 124 "GET /image_codes/42709004-2d70-4b86-b73d-aab35f23ed8c/ HTTP/1.1" 200 3136
+INFO 2018-11-24 18:01:06,279 basehttp 124 "GET /image_codes/f39d0bb8-0b12-46ab-99bb-d9c8c1ad926c/ HTTP/1.1" 200 3086
+INFO 2018-11-24 18:01:06,392 basehttp 124 "GET /image_codes/5600596a-1908-4e32-8e9d-e09b949acc82/ HTTP/1.1" 200 3556
+INFO 2018-11-24 18:07:56,766 basehttp 124 "GET /image_codes/b6914fa1-899f-4803-af88-725d1ccec564/ HTTP/1.1" 200 3339
+INFO 2018-11-24 18:07:56,926 basehttp 124 "GET /image_codes/daec0d95-f7d0-40ec-bdb5-2ddc8a5de1c2/ HTTP/1.1" 200 3156
+INFO 2018-11-24 18:07:57,046 basehttp 124 "GET /image_codes/5e12db77-79d0-43a0-a40c-6df840d45819/ HTTP/1.1" 200 3509
+INFO 2018-11-24 18:07:57,158 basehttp 124 "GET /image_codes/5fb64bc1-f2ce-4d3d-9b07-68c44197e05f/ HTTP/1.1" 200 2883
+INFO 2018-11-24 18:07:57,276 basehttp 124 "GET /image_codes/1114fd69-d517-4f74-ad91-4eb3d24a5248/ HTTP/1.1" 200 3365
+INFO 2018-11-24 18:07:57,393 basehttp 124 "GET /image_codes/e5a5dc79-ebee-4f29-8df1-223189b21d35/ HTTP/1.1" 200 2824
+INFO 2018-11-24 18:07:57,517 basehttp 124 "GET /image_codes/22e7dd3b-de36-486a-bc62-81cebe221244/ HTTP/1.1" 200 3281
+INFO 2018-11-24 18:07:57,622 basehttp 124 "GET /image_codes/625700bd-3423-43a0-873c-7366800c93b8/ HTTP/1.1" 200 3199
+INFO 2018-11-24 18:07:57,713 basehttp 124 "GET /image_codes/116e75c7-18f4-4ec1-add8-967ab5c58b25/ HTTP/1.1" 200 2705
+INFO 2018-11-24 18:07:57,839 basehttp 124 "GET /image_codes/6e23a853-dfe5-4989-ada0-0c28f10ecdfc/ HTTP/1.1" 200 3205
+INFO 2018-11-24 18:07:57,950 basehttp 124 "GET /image_codes/090be290-b07e-406e-86ff-f9c243de37a3/ HTTP/1.1" 200 2877
+INFO 2018-11-24 18:07:58,070 basehttp 124 "GET /image_codes/49cecab6-de92-4cb3-a43b-55943dd2b1c9/ HTTP/1.1" 200 3055
+INFO 2018-11-24 18:07:58,191 basehttp 124 "GET /image_codes/911152c1-44cf-4a19-a48d-29967d6ed1e6/ HTTP/1.1" 200 3648
+INFO 2018-11-24 18:07:58,313 basehttp 124 "GET /image_codes/6f510169-1340-4700-b411-fd7f870a3af0/ HTTP/1.1" 200 3082
+INFO 2018-11-24 18:07:58,437 basehttp 124 "GET /image_codes/1163629d-c382-4c66-b20c-13ce1f1f5bdb/ HTTP/1.1" 200 3573
+INFO 2018-11-24 18:07:58,547 basehttp 124 "GET /image_codes/849e552d-772b-4c1a-bf0d-cc44e3dedda0/ HTTP/1.1" 200 3200
+INFO 2018-11-24 18:07:58,677 basehttp 124 "GET /image_codes/d98c6661-c3ac-4931-ad33-4a7a181ca86c/ HTTP/1.1" 200 3394
+INFO 2018-11-24 18:07:58,780 basehttp 124 "GET /image_codes/4d70cd60-d3f9-4ce8-9f4a-683f9af93c75/ HTTP/1.1" 200 3448
+INFO 2018-11-24 18:07:58,909 basehttp 124 "GET /image_codes/13e6b6bb-be18-4a9b-a3aa-f297714ca765/ HTTP/1.1" 200 3286
+INFO 2018-11-24 18:07:59,029 basehttp 124 "GET /image_codes/66cf77e3-f46a-479b-b9f4-f4db67277564/ HTTP/1.1" 200 3413
+INFO 2018-11-24 18:07:59,143 basehttp 124 "GET /image_codes/1730dede-74a0-43d2-b34c-3dc61064623e/ HTTP/1.1" 200 3215
+INFO 2018-11-24 18:07:59,274 basehttp 124 "GET /image_codes/8d6f5658-acc8-4ab0-a2e7-23bcb1a759ac/ HTTP/1.1" 200 3303
+INFO 2018-11-24 18:07:59,392 basehttp 124 "GET /image_codes/fd8a3f99-7f62-4f4e-adfb-119de9da565e/ HTTP/1.1" 200 3083
+INFO 2018-11-24 18:07:59,520 basehttp 124 "GET /image_codes/60c42dbe-ee53-49d9-84d8-f0b6f955a37a/ HTTP/1.1" 200 3510
+INFO 2018-11-24 18:07:59,639 basehttp 124 "GET /image_codes/a8f0d9d9-15a8-4fdb-bc4b-f20b3f2fca2a/ HTTP/1.1" 200 3104
+INFO 2018-11-24 18:07:59,753 basehttp 124 "GET /image_codes/390e4593-0f90-4639-9943-611c3297b8d6/ HTTP/1.1" 200 2813
+INFO 2018-11-24 18:07:59,886 basehttp 124 "GET /image_codes/8a782ec5-fc57-4127-bd9b-01fb07acaeb5/ HTTP/1.1" 200 3321
+INFO 2018-11-24 18:07:59,990 basehttp 124 "GET /image_codes/e37b5751-5f86-4b06-9c19-5d096d30886d/ HTTP/1.1" 200 3298
+INFO 2018-11-24 18:08:00,119 basehttp 124 "GET /image_codes/5f562a06-a449-46a1-91aa-5e21435e2abb/ HTTP/1.1" 200 3238
+INFO 2018-11-24 18:08:00,246 basehttp 124 "GET /image_codes/029b4c84-4afb-4939-8f12-cb2bc351abc6/ HTTP/1.1" 200 2901
+INFO 2018-11-24 18:08:00,366 basehttp 124 "GET /image_codes/84b25a07-82bd-4878-a574-1917bf2c2bf6/ HTTP/1.1" 200 3186
+INFO 2018-11-24 18:08:00,486 basehttp 124 "GET /image_codes/0a88ecbf-8c23-4269-b9c3-60d38cbe553b/ HTTP/1.1" 200 3220
+INFO 2018-11-24 18:08:00,599 basehttp 124 "GET /image_codes/adee2c53-ca46-466a-8819-36e2f9809efa/ HTTP/1.1" 200 3314
+INFO 2018-11-24 18:08:00,718 basehttp 124 "GET /image_codes/911a4319-0d76-4b10-9f26-e30c7d000ba9/ HTTP/1.1" 200 3542
+INFO 2018-11-24 18:08:00,864 basehttp 124 "GET /image_codes/5189c055-d708-465d-988d-5c52769c11f5/ HTTP/1.1" 200 3134
+INFO 2018-11-24 18:08:00,966 basehttp 124 "GET /image_codes/25a11ed4-7d18-45f9-8e27-61d131b7b76a/ HTTP/1.1" 200 3455
+INFO 2018-11-24 18:08:01,070 basehttp 124 "GET /image_codes/9d09183b-6340-455e-b647-a523d3aaef14/ HTTP/1.1" 200 3317
+INFO 2018-11-24 18:08:01,183 basehttp 124 "GET /image_codes/1f0bf1a9-ef8e-401c-af4a-de7b2aca151f/ HTTP/1.1" 200 3630
+INFO 2018-11-24 18:08:01,317 basehttp 124 "GET /image_codes/1c281286-eea5-4f6a-95aa-9f90f231570c/ HTTP/1.1" 200 3402
+INFO 2018-11-24 18:08:01,541 basehttp 124 "GET /image_codes/ca8671e4-4a71-4217-a3e7-d60698abfddc/ HTTP/1.1" 200 2901
+INFO 2018-11-24 18:08:01,655 basehttp 124 "GET /image_codes/9ff7d2d8-4bfc-4e1d-a8e4-38731ab8ba7e/ HTTP/1.1" 200 2753
+INFO 2018-11-24 18:08:01,767 basehttp 124 "GET /image_codes/3eca3252-4672-414a-9e46-3bcee5620465/ HTTP/1.1" 200 3353
+INFO 2018-11-24 18:08:01,880 basehttp 124 "GET /image_codes/3f2d2a95-d5e9-447a-bb1d-3a05c5437619/ HTTP/1.1" 200 3057
+INFO 2018-11-24 18:08:02,016 basehttp 124 "GET /image_codes/e2fdc678-2cf7-4c82-b7cc-c95ffc3c7899/ HTTP/1.1" 200 3278
+INFO 2018-11-24 18:08:02,143 basehttp 124 "GET /image_codes/e91c148d-6d5d-42f3-9e63-a5b6b03ddee7/ HTTP/1.1" 200 3485
+INFO 2018-11-24 18:08:02,241 basehttp 124 "GET /image_codes/ea379258-12b9-49bb-9fe1-71cfd1e608c0/ HTTP/1.1" 200 3044
+INFO 2018-11-24 18:08:02,359 basehttp 124 "GET /image_codes/801e38f5-5ab8-466a-ad63-7e1970ec3097/ HTTP/1.1" 200 3291
+INFO 2018-11-24 18:08:02,478 basehttp 124 "GET /image_codes/4f952043-d894-4a6d-abaf-4813de08b5a6/ HTTP/1.1" 200 3481
+INFO 2018-11-24 18:08:02,583 basehttp 124 "GET /image_codes/ea46791f-c62e-4500-8def-baeaf8632b02/ HTTP/1.1" 200 3050
+INFO 2018-11-24 18:08:02,671 basehttp 124 "GET /image_codes/a902d45c-1f3b-4849-9dc0-b6736c6a837c/ HTTP/1.1" 200 3225
+INFO 2018-11-24 18:08:02,782 basehttp 124 "GET /image_codes/2f56d6f2-6890-40a2-8442-d7a27706e649/ HTTP/1.1" 200 2854
+INFO 2018-11-24 18:08:02,924 basehttp 124 "GET /image_codes/c62fdc87-ffac-40a1-b7fb-62472669208e/ HTTP/1.1" 200 3152
+INFO 2018-11-24 18:08:03,160 basehttp 124 "GET /image_codes/0c7e7f72-5fe5-48f0-98e4-e1106b1237e7/ HTTP/1.1" 200 3403
+INFO 2018-11-24 18:08:03,304 basehttp 124 "GET /image_codes/d8422627-fdeb-42e4-953e-1c65b58a0ce4/ HTTP/1.1" 200 3571
+INFO 2018-11-24 18:08:03,422 basehttp 124 "GET /image_codes/1bf3cca3-5213-4bca-9448-2918e7fa87f6/ HTTP/1.1" 200 3003
+INFO 2018-11-24 18:08:03,536 basehttp 124 "GET /image_codes/f9ef7aca-9d5e-4229-b8ae-f676274df0d4/ HTTP/1.1" 200 3208
+INFO 2018-11-24 18:08:47,954 basehttp 124 "GET /image_codes/e5780e38-2136-4dcf-b3e7-0bff8469ae38/ HTTP/1.1" 200 2897
+INFO 2018-11-24 18:08:49,838 basehttp 124 "GET /image_codes/c4df57c4-d1a4-4cb1-85da-8937a10cc6ae/ HTTP/1.1" 200 3303
+INFO 2018-11-26 09:13:28,125 basehttp 124 "GET /image_codes/20eaed77-b94b-43b8-a77c-b454ddaec196/ HTTP/1.1" 200 3060
+INFO 2018-11-26 09:13:29,385 basehttp 124 "GET /image_codes/3072aff1-fed0-4b47-9681-629d4e2ddbcc/ HTTP/1.1" 200 3422
+INFO 2018-11-26 09:13:30,496 basehttp 124 "GET /image_codes/c3761fd7-7f37-46bd-9e12-79e35f4bd631/ HTTP/1.1" 200 3115
+INFO 2018-11-26 09:13:34,379 basehttp 124 "GET /image_codes/c31c8346-fea4-48c0-b21f-f3712c22bcf1/ HTTP/1.1" 200 3490
+INFO 2018-11-26 09:13:34,938 basehttp 124 "GET /image_codes/f384d32e-76b4-4e13-9c0b-d7de14e4e6b4/ HTTP/1.1" 200 3103
+INFO 2018-11-26 09:17:20,712 basehttp 124 "GET /image_codes/80d1acc9-74ba-4a13-91ea-bcd03f8ac3ad/ HTTP/1.1" 200 3251
+WARNING 2018-11-26 09:43:41,950 log 228 Not Found: /
+WARNING 2018-11-26 09:43:41,953 basehttp 124 "GET / HTTP/1.1" 404 2289
+WARNING 2018-11-26 09:43:42,201 log 228 Not Found: /favicon.ico
+WARNING 2018-11-26 09:43:42,203 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2340
+INFO 2018-11-26 09:43:49,126 basehttp 124 "GET /image_codes/44454175-da7c-4a9f-a930-0e0e3f65ff15/ HTTP/1.1" 200 3380
+INFO 2018-11-26 09:44:22,977 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 200 5523
+INFO 2018-11-26 09:44:22,992 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,007 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,007 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,007 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,008 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,009 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,011 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,027 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,028 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,028 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-11-26 09:44:23,041 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2018-11-26 09:46:59,129 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 200 5523
+ERROR 2018-11-26 09:47:09,383 log 228 Internal Server Error: /sms_codes/18389266585/
+ERROR 2018-11-26 09:47:09,384 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 500 5540
+INFO 2018-11-26 09:47:46,808 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 200 5523
+WARNING 2018-11-26 09:48:56,060 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:48:56,063 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 400 5549
+WARNING 2018-11-26 09:49:05,097 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:49:05,098 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=44454175-da7c-4a9f-a930-0e0e3f65ff15&text=IU7E HTTP/1.1" 400 5549
+INFO 2018-11-26 09:49:08,902 basehttp 124 "GET /image_codes/5ffe76af-c8a1-4624-9032-738438c6840d/ HTTP/1.1" 200 3321
+INFO 2018-11-26 09:49:44,638 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 200 5523
+ERROR 2018-11-26 09:49:51,660 log 228 Internal Server Error: /sms_codes/18389266585/
+ERROR 2018-11-26 09:49:51,661 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 500 5540
+INFO 2018-11-26 09:50:43,462 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 200 5523
+ERROR 2018-11-26 09:50:49,248 log 228 Internal Server Error: /sms_codes/18389266585/
+ERROR 2018-11-26 09:50:49,250 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 500 5540
+INFO 2018-11-26 09:51:34,250 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 200 5523
+WARNING 2018-11-26 09:55:16,841 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:55:16,843 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 400 5549
+WARNING 2018-11-26 09:56:03,311 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:56:03,313 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 400 5549
+WARNING 2018-11-26 09:56:06,806 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:56:06,807 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 400 5549
+WARNING 2018-11-26 09:56:21,280 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:56:21,283 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 400 5549
+WARNING 2018-11-26 09:56:25,032 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 09:56:25,033 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=5ffe76af-c8a1-4624-9032-738438c6840d&text=QAW9 HTTP/1.1" 400 5549
+INFO 2018-11-26 10:37:59,599 basehttp 124 "GET /image_codes/8a14eefd-a4e9-4600-ae45-55df536c4148/ HTTP/1.1" 200 3333
+INFO 2018-11-26 10:38:01,026 basehttp 124 "GET /image_codes/904d9e56-39ee-4984-952b-9ad87d5456a3/ HTTP/1.1" 200 3197
+INFO 2018-11-26 11:28:51,744 basehttp 124 "GET /image_codes/52828d5d-1246-44c8-90d8-d53099b4dc7b/ HTTP/1.1" 200 3202
+INFO 2018-11-26 11:28:52,252 basehttp 124 "GET /image_codes/c86be824-dfcf-44ab-991a-74922f98faeb/ HTTP/1.1" 200 3101
+INFO 2018-11-26 11:28:55,624 basehttp 124 "GET /image_codes/2c6f7a62-f468-44bb-8e67-758b8f85e288/ HTTP/1.1" 200 3414
+INFO 2018-11-26 11:28:56,877 basehttp 124 "GET /image_codes/693a29a9-c9be-4e33-9dfd-4680810a69de/ HTTP/1.1" 200 3448
+INFO 2018-11-26 11:28:57,728 basehttp 124 "GET /image_codes/f06df66a-bdba-4eee-b5c2-cececa909167/ HTTP/1.1" 200 3058
+INFO 2018-11-26 11:29:42,028 basehttp 124 "GET /image_codes/f94139d7-1f7c-4e03-acc0-24e6539f7d69/ HTTP/1.1" 200 3079
+INFO 2018-11-26 11:29:42,163 basehttp 124 "GET /image_codes/678d12af-83a0-4698-b8af-ee85526e6a43/ HTTP/1.1" 200 3063
+INFO 2018-11-26 11:29:42,292 basehttp 124 "GET /image_codes/ff6f6c85-eaf3-4fe6-807a-51ed0f667dc0/ HTTP/1.1" 200 3486
+INFO 2018-11-26 11:29:42,409 basehttp 124 "GET /image_codes/ee276994-8735-4758-b0c7-9ae587a1a9ba/ HTTP/1.1" 200 3198
+INFO 2018-11-26 11:29:42,539 basehttp 124 "GET /image_codes/adbb7d69-fa14-46ef-9dfe-192efa721375/ HTTP/1.1" 200 3278
+INFO 2018-11-26 11:29:42,653 basehttp 124 "GET /image_codes/b4b232e2-bf68-4062-8cf2-43b285ad7b4d/ HTTP/1.1" 200 3011
+INFO 2018-11-26 11:29:42,779 basehttp 124 "GET /image_codes/09554d37-264c-490e-b343-afd9a08c8828/ HTTP/1.1" 200 3155
+INFO 2018-11-26 11:29:42,899 basehttp 124 "GET /image_codes/c86da044-bac3-478a-95cc-f4e3c8e04adb/ HTTP/1.1" 200 3246
+INFO 2018-11-26 11:29:45,251 basehttp 124 "GET /image_codes/79308643-510a-4b0f-8ddd-7ea3a484ed9b/ HTTP/1.1" 200 3070
+INFO 2018-11-26 11:29:45,394 basehttp 124 "GET /image_codes/131f44d8-7a8d-4b48-9848-8aa8633aaed8/ HTTP/1.1" 200 3432
+INFO 2018-11-26 11:29:45,581 basehttp 124 "GET /image_codes/99f0c32d-9cdc-41b0-98d8-fc5bf4e33063/ HTTP/1.1" 200 3119
+INFO 2018-11-26 11:29:45,792 basehttp 124 "GET /image_codes/db40e4e0-8952-4f38-bf2f-036fa644f80f/ HTTP/1.1" 200 3330
+INFO 2018-11-26 11:29:45,909 basehttp 124 "GET /image_codes/62dde216-a45d-4f9f-9fbf-c70770e30387/ HTTP/1.1" 200 2691
+INFO 2018-11-26 11:29:46,020 basehttp 124 "GET /image_codes/12dde47b-d090-47b8-b150-0c2010809279/ HTTP/1.1" 200 3286
+INFO 2018-11-26 11:29:46,151 basehttp 124 "GET /image_codes/dcf53028-9888-4546-bf8c-c068ff5322f7/ HTTP/1.1" 200 3211
+INFO 2018-11-26 11:29:46,282 basehttp 124 "GET /image_codes/f5968a8f-4708-4374-90fa-b367fd9aa2db/ HTTP/1.1" 200 2855
+WARNING 2018-11-26 11:30:17,492 log 228 Not Found: /index
+WARNING 2018-11-26 11:30:17,494 basehttp 124 "GET /index HTTP/1.1" 404 2322
+WARNING 2018-11-26 11:30:17,683 log 228 Not Found: /favicon.ico
+WARNING 2018-11-26 11:30:17,685 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2340
+ERROR 2018-11-26 11:30:24,127 log 228 Internal Server Error: /sms_codes/1838956/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 45, in get
+    serializer.is_vaild(raise_exception=True)
+AttributeError: 'ImageCodeCheckSerializer' object has no attribute 'is_vaild'
+ERROR 2018-11-26 11:30:24,139 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 500 91356
+WARNING 2018-11-26 11:31:11,198 log 228 Bad Request: /sms_codes/1838956/
+WARNING 2018-11-26 11:31:11,200 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5547
+INFO 2018-11-26 11:31:11,259 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-26 11:31:11,259 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-26 11:31:11,260 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-26 11:31:11,261 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-26 11:31:11,262 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-26 11:31:11,264 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-26 11:31:11,276 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-26 11:31:11,287 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-26 11:31:11,291 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-26 11:31:11,293 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-26 11:31:11,369 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2018-11-26 11:31:21,819 basehttp 124 "GET /image_codes/43fbc5b3-dd3c-45cf-a66e-4810c32d0c27/ HTTP/1.1" 200 3226
+ERROR 2018-11-26 11:31:40,856 log 228 Internal Server Error: /sms_codes/1838956/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl = redis_coon.pipline()
+AttributeError: 'Redis' object has no attribute 'pipline'
+ERROR 2018-11-26 11:31:40,868 basehttp 124 "GET /sms_codes/1838956/?image_code_id=43fbc5b3-dd3c-45cf-a66e-4810c32d0c27&text=3PDB HTTP/1.1" 500 91722
+INFO 2018-11-26 11:37:59,308 basehttp 124 "GET /image_codes/a594c068-a263-414e-bfbc-8f5366d16ef0/ HTTP/1.1" 200 3140
+INFO 2018-11-26 11:38:00,185 basehttp 124 "GET /image_codes/7adda344-3c63-41e6-a1ab-3441b1ce8570/ HTTP/1.1" 200 3011
+INFO 2018-11-26 11:38:11,798 basehttp 124 "GET /image_codes/d99b1258-6338-4380-bdbd-0f0360d76803/ HTTP/1.1" 200 3069
+ERROR 2018-11-26 11:38:36,743 log 228 Internal Server Error: /sms_codes/1838956/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl = redis_coon.pipline()
+AttributeError: 'Redis' object has no attribute 'pipline'
+ERROR 2018-11-26 11:38:36,757 basehttp 124 "GET /sms_codes/1838956/?image_code_id=d99b1258-6338-4380-bdbd-0f0360d76803&text=LGJZ HTTP/1.1" 500 91722
+WARNING 2018-11-26 11:38:37,088 log 228 Not Found: /favicon.ico
+WARNING 2018-11-26 11:38:37,090 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2340
+WARNING 2018-11-26 11:39:18,839 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:39:18,841 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=d99b1258-6338-4380-bdbd-0f0360d76803&text=LGJZ HTTP/1.1" 400 5571
+INFO 2018-11-26 11:39:18,873 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-26 11:39:18,895 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-26 11:39:18,896 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-26 11:39:18,896 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-26 11:39:18,897 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-26 11:39:18,904 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-26 11:39:18,905 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-26 11:39:18,914 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-26 11:39:18,920 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-26 11:39:18,921 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-26 11:39:18,936 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-11-26 11:39:27,205 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:39:27,207 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=d99b1258-6338-4380-bdbd-0f0360d76803&text=LGJZ HTTP/1.1" 400 5571
+INFO 2018-11-26 11:39:31,537 basehttp 124 "GET /image_codes/35be2821-b897-447f-863b-ad1a4fdf40c5/ HTTP/1.1" 200 3284
+ERROR 2018-11-26 11:39:58,419 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl = redis_coon.pipline()
+AttributeError: 'Redis' object has no attribute 'pipline'
+ERROR 2018-11-26 11:39:58,431 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=35be2821-b897-447f-863b-ad1a4fdf40c5&text=ywce HTTP/1.1" 500 91810
+WARNING 2018-11-26 11:40:40,537 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:40:40,539 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=35be2821-b897-447f-863b-ad1a4fdf40c5&text=ywce HTTP/1.1" 400 5571
+INFO 2018-11-26 11:40:45,709 basehttp 124 "GET /image_codes/fa45a69c-8d18-4f33-8bea-fc7374df5a6b/ HTTP/1.1" 200 2973
+WARNING 2018-11-26 11:40:59,930 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:40:59,931 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=fa45a69c-8d18-4f33-8bea-fc7374df5a6b&text=dn73 HTTP/1.1" 400 5571
+WARNING 2018-11-26 11:41:06,930 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:41:06,931 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=fa45a69c-8d18-4f33-8bea-fc7374df5a6b&text=dnt3 HTTP/1.1" 400 5571
+INFO 2018-11-26 11:41:12,633 basehttp 124 "GET /image_codes/8fb189a8-958b-4ba2-9d49-83ff89048e48/ HTTP/1.1" 200 3342
+INFO 2018-11-26 11:41:37,182 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=8fb189a8-958b-4ba2-9d49-83ff89048e48&text=O8XO HTTP/1.1" 200 5523
+WARNING 2018-11-26 11:45:38,560 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:45:38,561 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=8fb189a8-958b-4ba2-9d49-83ff89048e48&text=O8XO HTTP/1.1" 400 5571
+INFO 2018-11-26 11:49:49,106 basehttp 124 "GET /image_codes/a855ff27-3f84-43f9-8c61-d45d4dfcbfdd/ HTTP/1.1" 200 3177
+ERROR 2018-11-26 11:50:09,861 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl= redis_coon.piplined()
+AttributeError: 'Redis' object has no attribute 'piplined'
+ERROR 2018-11-26 11:50:09,872 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=a855ff27-3f84-43f9-8c61-d45d4dfcbfdd&text=NUJK HTTP/1.1" 500 91827
+WARNING 2018-11-26 11:50:25,569 log 228 Bad Request: /sms_codes/18389266585/
+WARNING 2018-11-26 11:50:25,570 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=a855ff27-3f84-43f9-8c61-d45d4dfcbfdd&text=NUJK HTTP/1.1" 400 5571
+INFO 2018-11-26 11:50:28,435 basehttp 124 "GET /image_codes/bb1509be-8a79-40e6-9963-48fe0b7c71c4/ HTTP/1.1" 200 3484
+ERROR 2018-11-26 11:50:48,647 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl= redis_coon.pipline()
+AttributeError: 'Redis' object has no attribute 'pipline'
+ERROR 2018-11-26 11:50:48,661 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=bb1509be-8a79-40e6-9963-48fe0b7c71c4&text=RUAE HTTP/1.1" 500 91820
+INFO 2018-11-26 11:53:15,146 basehttp 124 "GET /image_codes/2597d9f6-8ece-4940-bf5b-64aae1120776/ HTTP/1.1" 200 3316
+ERROR 2018-11-26 11:53:29,284 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl= redis_conn.pipline()
+AttributeError: 'Redis' object has no attribute 'pipline'
+ERROR 2018-11-26 11:53:29,297 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=2597d9f6-8ece-4940-bf5b-64aae1120776&text=UTDH HTTP/1.1" 500 91820
+INFO 2018-11-26 11:54:47,275 basehttp 124 "GET /image_codes/ded2fdd3-f32b-4d39-a38e-c2c4b00dde35/ HTTP/1.1" 200 3121
+ERROR 2018-11-26 11:55:02,131 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 52, in get
+    pl= redis_conn.Pipline()
+AttributeError: 'Redis' object has no attribute 'Pipline'
+ERROR 2018-11-26 11:55:02,145 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=ded2fdd3-f32b-4d39-a38e-c2c4b00dde35&text=ne3k HTTP/1.1" 500 91820
+INFO 2018-11-26 11:55:58,355 basehttp 124 "GET /image_codes/09dd0840-a2b2-4a80-ac6f-adce16f1c50e/ HTTP/1.1" 200 3157
+ERROR 2018-11-26 11:56:13,868 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 53, in get
+    pl.mutil()
+AttributeError: 'Pipeline' object has no attribute 'mutil'
+ERROR 2018-11-26 11:56:13,883 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=09dd0840-a2b2-4a80-ac6f-adce16f1c50e&text=LFLO HTTP/1.1" 500 92021
+INFO 2018-11-26 11:56:28,997 basehttp 124 "GET /image_codes/a1dda923-c8a3-42bd-b750-5482f7fe55f8/ HTTP/1.1" 200 3257
+ERROR 2018-11-26 11:56:46,215 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 53, in get
+    pl.mutil()
+AttributeError: 'Pipeline' object has no attribute 'mutil'
+ERROR 2018-11-26 11:56:46,226 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=a1dda923-c8a3-42bd-b750-5482f7fe55f8&text=SJMQ HTTP/1.1" 500 92022
+INFO 2018-11-26 11:57:16,408 basehttp 124 "GET /image_codes/2437a937-04b9-41fe-b466-ff77f2d57d1b/ HTTP/1.1" 200 3219
+ERROR 2018-11-26 11:57:33,157 log 228 Internal Server Error: /sms_codes/18389266585/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\shop\jianyue\jianyue\apps\verifications\views.py", line 56, in get
+    pl.excute()
+AttributeError: 'Pipeline' object has no attribute 'excute'
+ERROR 2018-11-26 11:57:33,171 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=2437a937-04b9-41fe-b466-ff77f2d57d1b&text=NCQI HTTP/1.1" 500 92123
+INFO 2018-11-26 11:57:52,790 basehttp 124 "GET /image_codes/3553f634-9afe-4293-ae66-56f2b8cbf3c2/ HTTP/1.1" 200 3348
+INFO 2018-11-26 11:58:13,472 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=3553f634-9afe-4293-ae66-56f2b8cbf3c2&text=YWH8 HTTP/1.1" 200 5523
