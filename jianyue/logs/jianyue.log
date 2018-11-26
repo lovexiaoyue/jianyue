@@ -733,3 +733,229 @@ AttributeError: 'Pipeline' object has no attribute 'excute'
 ERROR 2018-11-26 11:57:33,171 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=2437a937-04b9-41fe-b466-ff77f2d57d1b&text=NCQI HTTP/1.1" 500 92123
 INFO 2018-11-26 11:57:52,790 basehttp 124 "GET /image_codes/3553f634-9afe-4293-ae66-56f2b8cbf3c2/ HTTP/1.1" 200 3348
 INFO 2018-11-26 11:58:13,472 basehttp 124 "GET /sms_codes/18389266585/?image_code_id=3553f634-9afe-4293-ae66-56f2b8cbf3c2&text=YWH8 HTTP/1.1" 200 5523
+WARNING 2018-11-26 17:24:41,574 base 152 Not Found: /
+WARNING 2018-11-26 17:24:41,586 basehttp 124 "GET / HTTP/1.1" 404 2278
+WARNING 2018-11-26 17:24:41,981 base 152 Not Found: /favicon.ico
+WARNING 2018-11-26 17:24:41,983 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2329
+ERROR 2018-11-26 17:25:00,986 exception 135 Internal Server Error: /image_codes/53f56f0e-7e22-44a2-8697-17ad5629bbc4/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:01,450 basehttp 124 "GET /image_codes/53f56f0e-7e22-44a2-8697-17ad5629bbc4/ HTTP/1.1" 500 17697
+ERROR 2018-11-26 17:25:02,174 exception 135 Internal Server Error: /image_codes/be261430-9bdd-45f3-bb8c-6b08d507f9b2/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:02,219 basehttp 124 "GET /image_codes/be261430-9bdd-45f3-bb8c-6b08d507f9b2/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:02,594 exception 135 Internal Server Error: /image_codes/75591685-f340-446b-8034-990abfce73e0/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:02,637 basehttp 124 "GET /image_codes/75591685-f340-446b-8034-990abfce73e0/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:02,755 exception 135 Internal Server Error: /image_codes/e317dba0-bfa3-44bc-a974-dd0b03206c68/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:02,793 basehttp 124 "GET /image_codes/e317dba0-bfa3-44bc-a974-dd0b03206c68/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:03,002 exception 135 Internal Server Error: /image_codes/682e6258-99b8-401c-9d48-654718b99023/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:03,027 basehttp 124 "GET /image_codes/682e6258-99b8-401c-9d48-654718b99023/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:03,132 exception 135 Internal Server Error: /image_codes/d106c154-b1b9-4f14-972d-884196a3edcd/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:03,155 basehttp 124 "GET /image_codes/d106c154-b1b9-4f14-972d-884196a3edcd/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:03,270 exception 135 Internal Server Error: /image_codes/4e49c9c8-9f17-4f0a-ab7e-537fdde335fe/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:03,300 basehttp 124 "GET /image_codes/4e49c9c8-9f17-4f0a-ab7e-537fdde335fe/ HTTP/1.1" 500 17697
+ERROR 2018-11-26 17:25:04,253 exception 135 Internal Server Error: /image_codes/b52e41a4-2e20-4f34-bca9-703f48523a1f/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:04,277 basehttp 124 "GET /image_codes/b52e41a4-2e20-4f34-bca9-703f48523a1f/ HTTP/1.1" 500 17698
+ERROR 2018-11-26 17:25:04,652 exception 135 Internal Server Error: /image_codes/6b71cf8b-85dc-4408-a7dc-12e83149b3c4/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:04,679 basehttp 124 "GET /image_codes/6b71cf8b-85dc-4408-a7dc-12e83149b3c4/ HTTP/1.1" 500 17697
+ERROR 2018-11-26 17:25:07,698 exception 135 Internal Server Error: /image_codes/03a92c23-d3d1-4269-b7bc-bbd12849b4d6/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 31, in get
+    redis_conn.setex("img_%s" % code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
+AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_REDIS_EXPIRES'
+ERROR 2018-11-26 17:25:07,735 basehttp 124 "GET /image_codes/03a92c23-d3d1-4269-b7bc-bbd12849b4d6/ HTTP/1.1" 500 17698
+INFO 2018-11-26 17:26:21,794 basehttp 124 "GET /image_codes/5b756e4f-dede-4d9b-a5fb-27c325937b43/ HTTP/1.1" 200 3106
+INFO 2018-11-26 17:26:22,623 basehttp 124 "GET /image_codes/3f29b93f-1b02-4af3-9ffb-2a18ba3b83a8/ HTTP/1.1" 200 2956
