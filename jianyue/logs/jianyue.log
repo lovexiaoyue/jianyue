@@ -959,3 +959,62 @@ AttributeError: module 'jianyue.libs.constants' has no attribute 'IMAGE_CODE_RED
 ERROR 2018-11-26 17:25:07,735 basehttp 124 "GET /image_codes/03a92c23-d3d1-4269-b7bc-bbd12849b4d6/ HTTP/1.1" 500 17698
 INFO 2018-11-26 17:26:21,794 basehttp 124 "GET /image_codes/5b756e4f-dede-4d9b-a5fb-27c325937b43/ HTTP/1.1" 200 3106
 INFO 2018-11-26 17:26:22,623 basehttp 124 "GET /image_codes/3f29b93f-1b02-4af3-9ffb-2a18ba3b83a8/ HTTP/1.1" 200 2956
+WARNING 2018-11-26 17:32:12,778 base 152 Not Found: /
+WARNING 2018-11-26 17:32:12,781 basehttp 124 "GET / HTTP/1.1" 404 2278
+WARNING 2018-11-26 17:36:15,796 basehttp 124 "GET /sms_codes/1838956/?image_code_id=cbaf4a8c-219c-421f-b565-802549b2c9c4&text=BONQ HTTP/1.1" 400 5547
+INFO 2018-11-26 17:36:15,843 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-26 17:36:15,843 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-26 17:36:15,844 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-26 17:36:15,845 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-26 17:36:15,846 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-26 17:36:15,847 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-26 17:36:15,873 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-26 17:36:15,873 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-26 17:36:15,874 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-26 17:36:15,875 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-26 17:36:15,954 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2018-11-26 17:36:50,745 basehttp 124 "GET /image_codes/a16cb06f-e919-444d-b6c5-965a4f3029dc/ HTTP/1.1" 200 3222
+INFO 2018-11-27 09:27:38,464 basehttp 124 "GET /image_codes/92c3257d-8307-457c-a4ca-bbb83951d408/ HTTP/1.1" 200 2952
+INFO 2018-11-27 09:36:35,387 basehttp 124 "GET /usernames/18389266585/count HTTP/1.1" 301 0
+ERROR 2018-11-27 09:36:35,395 exception 135 Internal Server Error: /usernames/18389266585/count/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\verifications\views.py", line 82, in get
+    count = User.object.filter(username=username).count()
+AttributeError: type object 'User' has no attribute 'object'
+ERROR 2018-11-27 09:36:35,562 basehttp 124 "GET /usernames/18389266585/count/ HTTP/1.1" 500 90988
+WARNING 2018-11-27 09:36:35,843 base 152 Not Found: /favicon.ico
+WARNING 2018-11-27 09:36:35,845 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2522
+INFO 2018-11-27 09:36:55,078 basehttp 124 "GET /usernames/18389266585/count/ HTTP/1.1" 200 5267
+INFO 2018-11-27 09:36:55,109 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-27 09:36:55,110 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-27 09:36:55,112 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-27 09:36:55,113 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-27 09:36:55,116 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-27 09:36:55,116 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-27 09:36:55,126 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-27 09:36:55,126 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-27 09:36:55,131 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-27 09:36:55,132 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-27 09:36:55,156 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2018-11-27 09:39:35,415 basehttp 124 "GET /usernames/18389266585/count/ HTTP/1.1" 200 5267
+INFO 2018-11-27 09:45:42,984 basehttp 124 "GET /usernames/18389266585/count/ HTTP/1.1" 200 5267
+INFO 2018-11-27 09:45:59,681 basehttp 124 "GET /mobiles/18389266585/count/ HTTP/1.1" 200 5267
+WARNING 2018-11-27 09:46:07,089 base 152 Not Found: /mobiles/28389266585/count/
+WARNING 2018-11-27 09:46:07,091 basehttp 124 "GET /mobiles/28389266585/count/ HTTP/1.1" 404 2762
+INFO 2018-11-27 09:46:17,451 basehttp 124 "GET /mobiles/18389566231/count/ HTTP/1.1" 200 5267

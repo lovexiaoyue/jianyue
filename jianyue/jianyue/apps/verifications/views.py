@@ -7,6 +7,7 @@ from jianyue.libs import constants
 from rest_framework import status
 from rest_framework.response import Response
 from jianyue.libs.yuntongxun.sms import CCP
+from users.models import User
 import random
 from . import serializers
 import logging
@@ -67,3 +68,38 @@ class SMSCodeView(GenericAPIView):
         except Exception as e:
             logger.error(e)
             return Response({"message": "error"}, status.HTTP_501_NOT_IMPLEMENTED)
+
+
+class UserCountView(APIView):
+    """
+    查询用户名数量
+    """
+
+    def get(self, request, username):
+        """
+        查询指定名称用户
+        """
+        count = User.objects.filter(username=username).count()
+        data = {
+            "username":username,
+            "count":count
+        }
+        return Response(data)
+
+
+class MobileCountView(APIView):
+    """
+    查询手机号数量
+    """
+
+    def get(self, request, mobile):
+        """
+        查询指定手机号
+        """
+
+        count = User.objects.filter(mobile=mobile).count()
+        data = {
+            "mobile":mobile,
+            "count":count
+        }
+        return Response(data)
