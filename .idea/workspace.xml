@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69346bb6-d781-4bbd-b496-e39fc0e07ee8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/users/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_pc/js/axios-0.18.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_pc/js/host.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jianyue/jianyue/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/jianyue/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_pc/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_pc/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_pc/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_pc/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jianyue/logs/jianyue.log" beforeDir="false" afterPath="$PROJECT_DIR$/jianyue/logs/jianyue.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="38" />
+            <state relative-caret-position="454">
+              <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -75,32 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/users/serializers.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_pc/js/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jianyue/jianyue/settings/dev.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="460">
+              <caret line="164" column="65" lean-forward="true" selection-start-line="164" selection-start-column="65" selection-end-line="164" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -108,17 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front_pc/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_pc/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="498">
+              <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -132,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jianyue/jianyue/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="460">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -165,6 +131,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>美多</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>简约</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -183,7 +157,6 @@
         <option value="$PROJECT_DIR$/jianyue/jianyue/libs/constants.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/settings/dev.py" />
-        <option value="$PROJECT_DIR$/front_pc/js/register.js" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/views.py" />
@@ -191,6 +164,8 @@
         <option value="$PROJECT_DIR$/jianyue/jianyue/apps/verifications/urls.py" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/jianyue/jianyue/urls.py" />
+        <option value="$PROJECT_DIR$/front_pc/register.html" />
+        <option value="$PROJECT_DIR$/front_pc/js/register.js" />
       </list>
     </option>
   </component>
@@ -216,36 +191,13 @@
             <path>
               <item name="jianyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
+              <item name="front_pc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jianyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jianyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jianyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jianyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="jianyue" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="verifications" type="462c0819:PsiDirectoryNode" />
+              <item name="front_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,6 +213,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhidekan2\Desktop\jianyue\front_pc\js" />
+      <recent name="C:\Users\zhidekan2\Desktop\jianyue\front_pc" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,18 +245,18 @@
       <workItem from="1543220251190" duration="771000" />
       <workItem from="1543224170964" duration="798000" />
       <workItem from="1543281785339" duration="110000" />
-      <workItem from="1543281914290" duration="5781000" />
+      <workItem from="1543281914290" duration="8493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7460000" />
+    <option name="totallyTimeSpent" value="10172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.329718" />
@@ -319,7 +277,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.20415778" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.20415778" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,31 +376,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/770635d7-0a3a-4dd7-8917-849232802b91/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://770635d7-0a3a-4dd7-8917-849232802b91/schema/jianyue/table/tb_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jianyue/jianyue/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front_pc/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front_pc/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -459,26 +396,6 @@
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/verifications/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="38" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -502,11 +419,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jianyue/jianyue/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="460">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#631#663#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/verifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianyue/jianyue/apps/verifications/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_pc/js/axios-0.18.0.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_pc/js/host.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://770635d7-0a3a-4dd7-8917-849232802b91/schema/jianyue/table/tb_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_pc/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_pc/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="164" column="65" lean-forward="true" selection-start-line="164" selection-start-column="65" selection-end-line="164" selection-end-column="65" />
         </state>
       </provider>
     </entry>
