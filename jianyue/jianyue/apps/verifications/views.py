@@ -47,7 +47,7 @@ class SMSCodeView(GenericAPIView):
 
         # 生成短信验证码
         sms_code = "%04d" % random.randint(0,999999)
-
+        print(sms_code)
         # 保存验证码记录
         redis_conn = get_redis_connection("verify_codes")
         pl = redis_conn.pipeline()

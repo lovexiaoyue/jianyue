@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django_redis import get_redis_connection
+from rest_framework_jwt.settings import api_settings
 from .models import User
 import re
 
@@ -10,6 +11,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(label="确认密码", required=True, allow_null=False, allow_blank=False, write_only=True)
     sms_code = serializers.CharField(label="短信验证码",required=True, allow_null=False, allow_blank=False, write_only=True)
     allow = serializers.CharField(label="同意协议", required=True, allow_blank=False, allow_null=False, write_only=True)
+    token = serializers.CharField(label="登录状态", read_only=True)
 
     def validated_mobile(self, value):
         """验证手机号"""
@@ -53,11 +55,18 @@ class CreateUserSerializer(serializers.ModelSerializer):
         # 调用Django的认证系统加密密码
         user.set_password(validated_data['password'])
         user.save()
+        # 添加记录登录状态的token
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        user.token = token
+
         return user
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'password', 'password2', 'sms_code', 'mobile', 'allow')
+        fields = ('id', 'username', 'password', 'password2', 'sms_code', 'mobile', 'allow','token')
         extra_kwargs = {
             'id': {'read_only': True},
             'username': {
@@ -78,3 +87,13 @@ class CreateUserSerializer(serializers.ModelSerializer):
                 }
             }
         }
+
+
+class UserDataSerializer(serializers.ModelSerializer):
+    """
+    用户详细信息序列化器
+    """
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'mobile', 'email', 'email_active')
