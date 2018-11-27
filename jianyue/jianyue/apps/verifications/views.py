@@ -11,7 +11,7 @@ from users.models import User
 import random
 from . import serializers
 import logging
-logger = logging.getLogger('loggers')
+logger = logging.getLogger('django')
 
 class ImageCodeView(APIView):
     """

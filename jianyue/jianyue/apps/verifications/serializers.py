@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django_redis import get_redis_connection
 import logging
 
-logger = logging.getLogger('loggers')
+logger = logging.getLogger('django')
 
 class ImageCodeCheckSerializer(serializers.Serializer):
     """

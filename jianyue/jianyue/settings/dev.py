@@ -28,7 +28,7 @@ SECRET_KEY = '!v$pxo%t=^83_t)u(au@399ru#nb=f_jx!hk82@r29+vl^98!f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'users.apps.UsersConfig',
-    'verifications.apps.VerificationsConfig'
+    'verifications.apps.VerificationsConfig',
+    'oauth.apps.OauthConfig'
 
 ]
 
@@ -231,3 +232,7 @@ JWT_AUTH = {
 }
 
 AUTH_USER_MODEL = 'users.User'
+
+QQ_APP_ID = '101523429'
+QQ_APP_KEY = '19b00744e9f426a4373d210f3dcef71e'
+QQ_REDIRECT_URL = 'http://www.lovexiaoyue.com:8080/oauth_callback.html'
