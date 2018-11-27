@@ -1,5 +1,5 @@
 from rest_framework.views import APIView
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import GenericAPIView,CreateAPIView
 from django_redis import get_redis_connection
 from jianyue.utils.captcha.captcha import captcha
 from django.http import HttpResponse
@@ -103,3 +103,10 @@ class MobileCountView(APIView):
             "count":count
         }
         return Response(data)
+
+
+class CreateUserView(CreateAPIView):
+    """
+    用户注册
+    """
+    serializer_class = serializers.CreateUserSerializer
