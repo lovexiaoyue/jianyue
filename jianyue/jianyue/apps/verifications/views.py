@@ -105,8 +105,3 @@ class MobileCountView(APIView):
         return Response(data)
 
 
-class CreateUserView(CreateAPIView):
-    """
-    用户注册
-    """
-    serializer_class = serializers.CreateUserSerializer
