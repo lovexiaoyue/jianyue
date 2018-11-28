@@ -1449,3 +1449,279 @@ WARNING 2018-11-27 18:04:23,426 basehttp 124 "GET /oauth/qq/user/?code=D3A6DAF89
 INFO 2018-11-27 18:04:30,049 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
 WARNING 2018-11-27 18:04:31,780 basehttp 124 "GET /oauth/qq/user/?code=F04BD2B81E37D3E677EE85B4902AB943 HTTP/1.1" 401 43
 WARNING 2018-11-27 18:05:15,370 basehttp 124 "GET /oauth/qq/user/?code=F04BD2B81E37D3E677EE85B4902AB943 HTTP/1.1" 401 43
+INFO 2018-11-28 09:10:26,156 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 09:10:39,890 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:11:45,349 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 5136
+INFO 2018-11-28 09:11:45,409 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-11-28 09:11:45,409 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-11-28 09:11:45,410 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-11-28 09:11:45,410 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-11-28 09:11:45,411 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-11-28 09:11:45,412 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-11-28 09:11:45,454 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-11-28 09:11:45,456 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2018-11-28 09:11:45,457 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-11-28 09:11:45,457 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-11-28 09:11:45,711 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-11-28 09:11:45,914 base 152 Not Found: /favicon.ico
+WARNING 2018-11-28 09:11:45,918 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3551
+WARNING 2018-11-28 09:12:36,856 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:12:38,389 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:14:46,908 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 5136
+WARNING 2018-11-28 09:14:55,845 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:16:32,515 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 5136
+WARNING 2018-11-28 09:17:27,308 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 5136
+INFO 2018-11-28 09:18:35,173 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 09:18:42,942 basehttp 124 "GET /oauth/qq/user/?code=78B0B3050CD983CD4EC8CB8003E5B2AC HTTP/1.1" 401 43
+WARNING 2018-11-28 09:20:50,930 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 09:20:56,020 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 09:21:03,629 base 152 Not Found: /
+WARNING 2018-11-28 09:21:03,630 basehttp 124 "GET / HTTP/1.1" 404 3500
+WARNING 2018-11-28 09:21:44,596 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 09:21:53,882 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 09:23:06,761 base 152 Not Found: /
+WARNING 2018-11-28 09:23:06,762 basehttp 124 "GET / HTTP/1.1" 404 3500
+WARNING 2018-11-28 09:23:20,111 base 152 Not Found: /
+WARNING 2018-11-28 09:23:20,113 basehttp 124 "GET / HTTP/1.1" 404 3500
+INFO 2018-11-28 09:23:24,299 basehttp 124 "GET /user HTTP/1.1" 301 0
+WARNING 2018-11-28 09:23:24,329 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:23:28,772 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:25:17,519 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:25:19,670 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:37:17,253 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:37:51,784 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+INFO 2018-11-28 09:41:14,042 basehttp 124 "GET /image_codes/14756614-5fe0-44c5-8a1c-9ab06ab8901e/ HTTP/1.1" 200 3456
+INFO 2018-11-28 09:41:16,697 basehttp 124 "GET /usernames/liufeng/count/ HTTP/1.1" 200 32
+INFO 2018-11-28 09:41:36,816 basehttp 124 "GET /usernames/liufeng/count/ HTTP/1.1" 200 5239
+WARNING 2018-11-28 09:41:45,057 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:42:31,436 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 09:42:32,636 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 09:42:33,356 basehttp 124 "GET /oauth/qq/user/?code=6073D4F2AA672529607D1B6F8BA4D799 HTTP/1.1" 401 5136
+INFO 2018-11-28 09:42:37,107 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 09:42:44,182 basehttp 124 "GET /oauth/qq/user/?code=72E0BF4551A2850420FE7D78528534D5 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:49:25,908 basehttp 124 "GET /oauth/qq/user/?code=7CFEECA8DE64725B26B69EBE83B49DF5 HTTP/1.1" 401 43
+WARNING 2018-11-28 09:53:09,294 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-11-28 09:53:09,296 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3251
+WARNING 2018-11-28 10:25:46,833 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-11-28 10:25:46,835 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3251
+INFO 2018-11-28 10:26:46,275 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:03,613 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:04,719 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:04,948 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:05,109 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:05,264 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:05,398 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:05,534 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:05,637 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:27:26,771 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 5645
+INFO 2018-11-28 10:28:01,063 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:28:03,160 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:02,976 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:16,152 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:40,518 basehttp 124 "GET /oauth/qq/authorization/?next=dsadasds/ HTTP/1.1" 200 5685
+INFO 2018-11-28 10:29:56,642 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:57,767 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:58,128 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:29:58,322 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:30:06,127 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:30:54,400 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:31:03,364 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:31:47,811 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 197
+INFO 2018-11-28 10:32:34,974 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 10:32:49,195 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 10:33:25,924 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 10:33:26,705 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 10:33:36,782 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 10:34:42,253 base 152 Not Found: /categories/157/hotskus/
+WARNING 2018-11-28 10:34:42,257 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 3415
+INFO 2018-11-28 10:34:58,300 basehttp 124 "OPTIONS /carts/ HTTP/1.1" 200 0
+WARNING 2018-11-28 10:34:58,318 base 152 Not Found: /carts/
+WARNING 2018-11-28 10:34:58,319 basehttp 124 "POST /carts/ HTTP/1.1" 404 3365
+WARNING 2018-11-28 10:39:11,849 base 152 Not Found: /categories/157/hotskus/
+WARNING 2018-11-28 10:39:11,850 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 3415
+WARNING 2018-11-28 10:39:19,770 base 152 Not Found: /categories/157/hotskus/
+WARNING 2018-11-28 10:39:19,796 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 3415
+INFO 2018-11-28 10:39:42,893 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 10:39:52,917 basehttp 124 "GET /oauth/qq/user/?code=55C624025F3449FACC5843AA4AFA1D1C HTTP/1.1" 401 43
+INFO 2018-11-28 10:52:37,827 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 10:52:45,472 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 43
+INFO 2018-11-28 10:54:41,565 basehttp 124 "GET /oauth/qq/authorization HTTP/1.1" 301 0
+INFO 2018-11-28 10:54:41,625 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+WARNING 2018-11-28 10:54:52,045 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:55:06,061 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:55:10,836 basehttp 124 "GET /oauth/qq/users/ HTTP/1.1" 405 8658
+WARNING 2018-11-28 10:55:35,563 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:55:36,781 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+INFO 2018-11-28 10:55:36,797 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+WARNING 2018-11-28 10:55:44,273 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:55:46,742 basehttp 124 "GET /oauth/qq/user/?format=json HTTP/1.1" 401 43
+WARNING 2018-11-28 10:56:01,752 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 43
+WARNING 2018-11-28 10:56:35,128 base 152 Not Found: /oauth/
+WARNING 2018-11-28 10:56:35,129 basehttp 124 "GET /oauth/ HTTP/1.1" 404 3538
+WARNING 2018-11-28 10:56:45,496 base 152 Not Found: /oauth/qq/
+WARNING 2018-11-28 10:56:45,498 basehttp 124 "GET /oauth/qq/ HTTP/1.1" 404 3547
+INFO 2018-11-28 10:56:50,583 basehttp 124 "GET /oauth/qq/user HTTP/1.1" 301 0
+WARNING 2018-11-28 10:56:50,626 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:57:06,842 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:57:10,293 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 10:57:49,551 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:00:53,320 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:00:57,504 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:01:11,642 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:01:17,663 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:01:24,325 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:01:38,761 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+INFO 2018-11-28 11:01:38,835 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,837 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,838 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,838 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,838 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,839 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,843 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,861 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,863 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,863 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-11-28 11:01:38,896 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-11-28 11:01:39,192 base 152 Not Found: /favicon.ico
+WARNING 2018-11-28 11:01:39,195 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3543
+INFO 2018-11-28 11:02:14,171 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+WARNING 2018-11-28 11:03:56,607 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 401 5033
+INFO 2018-11-28 11:04:21,927 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+WARNING 2018-11-28 11:04:27,011 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:04:31,227 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:08:24,503 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:08:27,256 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:08:29,070 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:08:32,546 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 43
+WARNING 2018-11-28 11:10:15,912 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+INFO 2018-11-28 11:11:40,096 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+INFO 2018-11-28 11:11:49,723 basehttp 124 "GET /oauth/qq/user HTTP/1.1" 301 0
+WARNING 2018-11-28 11:11:49,744 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+INFO 2018-11-28 11:12:43,042 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+WARNING 2018-11-28 11:13:07,975 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 401 4976
+WARNING 2018-11-28 11:13:32,131 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 43
+WARNING 2018-11-28 11:14:16,120 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:14:20,874 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:15:34,883 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:15:37,975 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:15:39,307 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:15:54,286 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:15:55,564 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:15:56,344 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 403 5064
+WARNING 2018-11-28 11:17:00,817 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:17:14,906 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:20:08,262 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D HTTP/1.1" 401 43
+INFO 2018-11-28 11:20:13,841 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 11:20:21,330 basehttp 124 "GET /oauth/qq/user/?code=122B9E591088292A740C6CE9FBA9244C HTTP/1.1" 401 43
+WARNING 2018-11-28 11:21:45,111 basehttp 124 "GET /oauth/qq/user/?code=122B9E591088292A740C6CE9FBA9244C HTTP/1.1" 401 43
+WARNING 2018-11-28 11:21:50,418 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:21:54,309 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:22:11,267 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:22:13,638 basehttp 124 "GET /oauth/qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5177
+WARNING 2018-11-28 11:22:20,315 basehttp 124 "GET /qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5147
+WARNING 2018-11-28 11:22:26,938 basehttp 124 "GET /qq/user/?code=BB72992921A8C4D65F4C705984B7630D&format=api HTTP/1.1" 401 5147
+WARNING 2018-11-28 11:22:30,915 basehttp 124 "GET /qq/user/ HTTP/1.1" 401 4946
+WARNING 2018-11-28 11:22:35,956 base 152 Not Found: /
+WARNING 2018-11-28 11:22:35,958 basehttp 124 "GET / HTTP/1.1" 404 3485
+WARNING 2018-11-28 11:22:42,881 basehttp 124 "GET /users/ HTTP/1.1" 405 8613
+WARNING 2018-11-28 11:22:49,803 base 152 Not Found: /
+WARNING 2018-11-28 11:22:49,805 basehttp 124 "GET / HTTP/1.1" 404 3485
+INFO 2018-11-28 11:23:00,732 basehttp 124 "GET /user HTTP/1.1" 301 0
+WARNING 2018-11-28 11:23:00,796 basehttp 124 "GET /user/ HTTP/1.1" 401 4931
+WARNING 2018-11-28 11:23:06,747 base 152 Not Found: /
+WARNING 2018-11-28 11:23:06,748 basehttp 124 "GET / HTTP/1.1" 404 3485
+INFO 2018-11-28 11:23:17,268 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5612
+WARNING 2018-11-28 11:23:25,026 base 152 Not Found: /qq
+WARNING 2018-11-28 11:23:25,028 basehttp 124 "GET /qq HTTP/1.1" 404 3509
+INFO 2018-11-28 11:23:35,381 basehttp 124 "GET /qq HTTP/1.1" 301 0
+ERROR 2018-11-28 11:23:35,389 exception 135 Internal Server Error: /qq/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 23, in get_a
+    code = request.query_params.get('code')
+AttributeError: 'WSGIRequest' object has no attribute 'query_params'
+ERROR 2018-11-28 11:23:35,558 basehttp 124 "GET /qq/ HTTP/1.1" 500 70560
+ERROR 2018-11-28 11:24:09,884 exception 135 Internal Server Error: /qq/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view oauth.views.get_a didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-11-28 11:24:10,141 basehttp 124 "GET /qq/ HTTP/1.1" 500 62419
+INFO 2018-11-28 11:25:10,769 basehttp 124 "GET /qq/ HTTP/1.1" 200 4
+INFO 2018-11-28 11:25:37,422 basehttp 124 "GET /qq/?code=122B9E591088292A740C6CE9FBA9244C&state=%2F HTTP/1.1" 200 4
+INFO 2018-11-28 11:25:40,198 basehttp 124 "GET /qq/?code=122B9E591088292A740C6CE9FBA9244C&state=%2F HTTP/1.1" 200 4
+WARNING 2018-11-28 11:26:00,291 basehttp 124 "GET /oauth/qq/user/?code=BCE5F1AAFB8FDB97796CAD41BDC0E112 HTTP/1.1" 401 43
+INFO 2018-11-28 11:26:12,599 basehttp 124 "GET /qq/?code=BCE5F1AAFB8FDB97796CAD41BDC0E112&state=%2F HTTP/1.1" 200 4
+WARNING 2018-11-28 11:29:37,292 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 43
+WARNING 2018-11-28 11:30:22,168 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:13,931 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:14,883 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:15,665 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:48,637 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:49,627 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 5136
+WARNING 2018-11-28 11:33:53,440 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 401 43
+INFO 2018-11-28 11:35:35,542 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 178
+WARNING 2018-11-28 11:35:42,780 basehttp 124 "GET /oauth/qq/user/?code=8828813CF3CA2AAD5E19F24B2330A9A8 HTTP/1.1" 401 43
+ERROR 2018-11-28 11:40:00,476 utils 75 QQµÇÂ½»ñÈ¡access_token³ö´í£º'NoneType' object is not subscriptable
+WARNING 2018-11-28 11:40:00,538 basehttp 124 "GET /oauth/qq/user/?code=077C89927CA5400101E128D2F2EAEF65 HTTP/1.1" 400 9532
+INFO 2018-11-28 14:12:40,051 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-28 14:12:40,163 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 214
+WARNING 2018-11-28 14:38:20,906 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-11-28 14:38:20,909 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3258
+WARNING 2018-11-28 14:38:22,659 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-11-28 14:38:22,661 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3258
+INFO 2018-11-28 14:39:13,048 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 14:39:15,637 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-11-28 14:39:15,640 basehttp 124 "GET /oauth/qq/user/?code=D1108BA100FACA955FD79061C368F1CA HTTP/1.1" 404 3434
+WARNING 2018-11-28 14:59:06,904 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-11-28 14:59:06,906 basehttp 124 "GET /oauth/qq/user/?code=D1108BA100FACA955FD79061C368F1CA HTTP/1.1" 404 3434
+INFO 2018-11-28 14:59:11,542 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+WARNING 2018-11-28 14:59:13,320 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-11-28 14:59:13,321 basehttp 124 "GET /oauth/qq/user/?code=E664E7D53C3EAB1136C1D528A7318AED HTTP/1.1" 404 3434
+INFO 2018-11-28 15:00:27,727 basehttp 124 "GET /oauth/qq/user/?code=E664E7D53C3EAB1136C1D528A7318AED HTTP/1.1" 200 16
+INFO 2018-11-28 15:00:27,769 basehttp 124 "GET /image_codes/f805e586-635d-4607-a7d5-8b7c35966e71/ HTTP/1.1" 200 2825
+INFO 2018-11-28 15:01:28,045 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 15:01:31,014 basehttp 124 "GET /oauth/qq/user/?code=2DE32CF6E2BD935B3E9CCAA8BD099124 HTTP/1.1" 200 16
+INFO 2018-11-28 15:01:31,057 basehttp 124 "GET /image_codes/12938c80-dbf3-4cfb-8c47-1881fc8a7ec1/ HTTP/1.1" 200 3489
+INFO 2018-11-28 15:02:14,910 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 15:02:17,180 basehttp 124 "GET /oauth/qq/user/?code=ED924081A578B99A24625C4E5BFBC364 HTTP/1.1" 200 16
+INFO 2018-11-28 15:02:17,221 basehttp 124 "GET /image_codes/0888e40c-ad74-4c4d-93fb-dfd6d6365735/ HTTP/1.1" 200 3248
+INFO 2018-11-28 15:02:49,109 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 15:02:52,126 basehttp 124 "GET /oauth/qq/user/?code=D9CD6530A754C749119F8A902ED4A28E HTTP/1.1" 200 16
+INFO 2018-11-28 15:02:52,153 basehttp 124 "GET /image_codes/b2f65849-762a-419d-b404-679c2241a98b/ HTTP/1.1" 200 3220
+INFO 2018-11-28 15:08:57,909 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-28 15:09:00,958 basehttp 124 "GET /oauth/qq/user/?code=CEB0613D2DD2A4F20A9DB44FCAA62133 HTTP/1.1" 200 48
+INFO 2018-11-28 15:09:01,002 basehttp 124 "GET /image_codes/4114aaa6-266a-4e06-b549-d6ee7d4636d4/ HTTP/1.1" 200 3436
+INFO 2018-11-28 15:18:17,145 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-28 15:18:20,472 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 29, in get
+    openid = oauth_user.get_openid(access_token)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\utils.py", line 77, in get_openid
+    url = "https://graph.qq.com/oauth2.0/me?" + access_token
+TypeError: must be str, not list
+ERROR 2018-11-28 15:18:20,628 basehttp 124 "GET /oauth/qq/user/?code=35C2DFDC3B52A92E18278EA3567ED141 HTTP/1.1" 500 18481
+ERROR 2018-11-28 15:18:45,372 basehttp 124 "GET /oauth/qq/user/?code=35C2DFDC3B52A92E18278EA3567ED141 HTTP/1.1" 503 29
