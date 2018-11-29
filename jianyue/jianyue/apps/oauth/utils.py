@@ -2,6 +2,10 @@ from django.db import models
 from django.conf import settings
 from urllib.parse import urlencode,parse_qs
 from urllib.request import urlopen
+from  itsdangerous import TimedJSONWebSignatureSerializer as JWTSerializer
+from itsdangerous import BadData
+from jianyue.libs import constants
+import re
 class BaseModel(models.Model):
     """
     QQ用户基类
@@ -38,12 +42,12 @@ class OAuthQQ(object):
         url = "https://graph.qq.com/oauth2.0/authorize?" + data
         return url
 
-class OAuthQQUser(object):
+class QQUser(object):
     """
     QQ登录用户辅助工具
     """
 
-    def __init__(self, code):
+    def __init__(self, code=None):
         self.app_id = settings.QQ_APP_ID
         self.app_key = settings.QQ_APP_KEY
         self.redirect_url = settings.QQ_REDIRECT_URL
@@ -74,7 +78,38 @@ class OAuthQQUser(object):
         获取QQ登录用户的openid
         :return: openid
         """
-        url = "https://graph.qq.com/oauth2.0/me?" + access_token
+
+        url = "https://graph.qq.com/oauth2.0/me?access_token=" + access_token
+        print("QQ登录地址为{}".format(url))
         response = urlopen(url)
         response_data = response.read().decode()
-        return response_data
+        openid = re.findall(r'"openid":"(.+)"', response_data)
+        openid = openid[0]
+        return openid
+
+    @staticmethod
+    def generate_save_user_token(openid):
+        """
+        生成保存用户数据的token
+        :param openid: 用户的openid
+        :return: token
+        """
+        serializer = JWTSerializer(settings.SECRET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+        data = {'openid': openid}
+        token = serializer.dumps(data)
+        return token.decode()
+
+    @staticmethod
+    def check_save_user_token(token):
+        """
+        解密token
+        :param token:
+        :return:
+        """
+        serializer = JWTSerializer(settings.SECRET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+        try:
+            data = serializer.loads(token)
+        except BadData:
+            return None
+        else:
+            return data.get('openid')

@@ -1,8 +1,12 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
+from rest_framework.generics import GenericAPIView
 from rest_framework import status
-from .utils import OAuthQQ,OAuthQQUser
+from rest_framework_jwt.settings import api_settings
+from .utils import OAuthQQ,QQUser
 from rest_framework.response import Response
+
+from .models import OAuthQQUser
+
 # Create your views here.
 class OAuthQQURLView(APIView):
     """
@@ -22,10 +26,34 @@ class OAuthQQUserView(APIView):
         code = request.query_params.get('code')
         if not code:
             return Response({"message":"缺少code参数"})
-        oauth_user = OAuthQQUser(code)
+        oauth_user = QQUser(code)
         access_token = oauth_user.get_access_token()
         if access_token is None:
             return Response({"message":"服务器错误"},status=status.HTTP_503_SERVICE_UNAVAILABLE)
         access_token = access_token[0]
         openid = oauth_user.get_openid(access_token)
-        print(openid)
+        try:
+            qq_user = OAuthQQUser.objects.get(openid=openid)
+        except OAuthQQUser.DoesNotExist:
+            token = oauth_user.generate_save_user_token(openid)
+            return Response({"access_token":token})
+        else:
+            # 找到用户, 生成token
+            user = qq_user.user
+            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+
+            payload = jwt_payload_handler(user)
+            token = jwt_encode_handler(payload)
+
+            response = Response({
+                'token': token,
+                'user_id': user.id,
+                'username': user.username
+            })
+            return response
+
+class CreateQQUserView(GenericAPIView):
+    """
+    创建QQ登录用户信息
+    """

@@ -1725,3 +1725,588 @@ Traceback (most recent call last):
 TypeError: must be str, not list
 ERROR 2018-11-28 15:18:20,628 basehttp 124 "GET /oauth/qq/user/?code=35C2DFDC3B52A92E18278EA3567ED141 HTTP/1.1" 500 18481
 ERROR 2018-11-28 15:18:45,372 basehttp 124 "GET /oauth/qq/user/?code=35C2DFDC3B52A92E18278EA3567ED141 HTTP/1.1" 503 29
+INFO 2018-11-28 15:18:52,621 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-28 15:18:54,654 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-28 15:18:54,940 basehttp 124 "GET /oauth/qq/user/?code=03E9D04CBD1E2C26EEC3F4B1385C47B8 HTTP/1.1" 500 85053
+ERROR 2018-11-28 15:22:44,358 basehttp 124 "GET /oauth/qq/user/?code=03E9D04CBD1E2C26EEC3F4B1385C47B8 HTTP/1.1" 503 29
+WARNING 2018-11-29 14:39:24,564 base 152 Not Found: /
+WARNING 2018-11-29 14:39:24,565 basehttp 124 "GET / HTTP/1.1" 404 3499
+WARNING 2018-11-29 14:39:24,713 base 152 Not Found: /favicon.ico
+WARNING 2018-11-29 14:39:24,715 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3550
+INFO 2018-11-29 15:01:22,895 basehttp 124 "GET /image_codes/57ecee87-c8b7-4d76-aaa5-4b400b643925/ HTTP/1.1" 200 2603
+INFO 2018-11-29 15:01:23,792 basehttp 124 "GET /image_codes/e87ba90c-d17a-4f38-a1ff-a5a7af0d783e/ HTTP/1.1" 200 3259
+INFO 2018-11-29 15:01:24,528 basehttp 124 "GET /image_codes/97da5b4a-2f03-4cbd-96ad-1f0b976b7326/ HTTP/1.1" 200 3096
+INFO 2018-11-29 15:01:24,909 basehttp 124 "GET /image_codes/53492041-8166-406a-8b11-ae6c0005f3ac/ HTTP/1.1" 200 3109
+INFO 2018-11-29 15:01:25,214 basehttp 124 "GET /image_codes/6009a995-5a01-4812-858a-52408e2c7c27/ HTTP/1.1" 200 3339
+INFO 2018-11-29 15:01:25,431 basehttp 124 "GET /image_codes/8884b69b-b146-48c6-bedd-c5b86ba2d802/ HTTP/1.1" 200 3266
+INFO 2018-11-29 15:01:25,606 basehttp 124 "GET /image_codes/d85b17cd-89b3-4000-b774-b046fe3d4874/ HTTP/1.1" 200 3260
+INFO 2018-11-29 15:01:27,439 basehttp 124 "GET /image_codes/eb7d5c4f-fc7e-4ea9-a037-a9654129c58a/ HTTP/1.1" 200 2814
+INFO 2018-11-29 15:01:27,928 basehttp 124 "GET /image_codes/6e012e26-910e-4bef-9cc4-54d0608f4dab/ HTTP/1.1" 200 3419
+INFO 2018-11-29 15:01:28,375 basehttp 124 "GET /image_codes/4b9f3aee-54ae-4df1-93f1-ec25dcb68f59/ HTTP/1.1" 200 3401
+INFO 2018-11-29 15:01:28,866 basehttp 124 "GET /image_codes/f27be045-4089-4b14-aea1-9da5af8489e1/ HTTP/1.1" 200 3427
+INFO 2018-11-29 15:01:29,670 basehttp 124 "GET /image_codes/6307f859-a729-4e76-af94-76f08cadc44f/ HTTP/1.1" 200 3257
+INFO 2018-11-29 15:01:30,321 basehttp 124 "GET /image_codes/db8dd6ef-99f1-47d7-b39c-49ea63abdf58/ HTTP/1.1" 200 3119
+INFO 2018-11-29 15:01:30,834 basehttp 124 "GET /image_codes/538ab1bd-4640-4b13-9a34-16db91aab595/ HTTP/1.1" 200 3093
+INFO 2018-11-29 15:01:31,563 basehttp 124 "GET /image_codes/2b0484e5-889e-4b56-be8e-583e4e1d7deb/ HTTP/1.1" 200 2837
+INFO 2018-11-29 15:01:31,985 basehttp 124 "GET /image_codes/2914e370-ddba-48eb-9c2a-b28d45f5da9c/ HTTP/1.1" 200 3347
+INFO 2018-11-29 15:01:32,351 basehttp 124 "GET /image_codes/4ae2d4db-d2e5-4d76-828c-7875d7874427/ HTTP/1.1" 200 3246
+INFO 2018-11-29 15:01:32,641 basehttp 124 "GET /image_codes/9bb49f4b-bee8-4107-bc1b-8620d9e05eec/ HTTP/1.1" 200 3027
+INFO 2018-11-29 15:01:32,919 basehttp 124 "GET /image_codes/ccff7260-f634-437e-be96-ee30c702d077/ HTTP/1.1" 200 3376
+INFO 2018-11-29 15:01:33,123 basehttp 124 "GET /image_codes/6aa6c91c-3969-4901-a02b-f657a4579bf4/ HTTP/1.1" 200 2889
+INFO 2018-11-29 15:01:33,260 basehttp 124 "GET /image_codes/07493e6f-ba4e-40e5-855c-97c67a90c770/ HTTP/1.1" 200 3084
+INFO 2018-11-29 15:03:32,203 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-29 15:18:12,783 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:20:19,671 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:20:19,861 basehttp 124 "GET /oauth/qq/user/?code=F51583868B21E0027066DC469C1A6BA8 HTTP/1.1" 500 85045
+ERROR 2018-11-29 15:20:59,198 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:20:59,254 basehttp 124 "GET /oauth/qq/user/?code=1C7909F6A7B9E734F08E203B878E67A1 HTTP/1.1" 500 85045
+INFO 2018-11-29 15:21:19,990 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:21:21,988 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:21:22,057 basehttp 124 "GET /oauth/qq/user/?code=FD64C48817D557FFD179C2EC3A244875 HTTP/1.1" 500 85045
+INFO 2018-11-29 15:23:04,487 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:23:07,129 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:23:07,321 basehttp 124 "GET /oauth/qq/user/?code=C8EAE869713B3EF45A61C1581AD8774B HTTP/1.1" 500 85053
+INFO 2018-11-29 15:28:59,518 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:29:01,997 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:29:02,165 basehttp 124 "GET /oauth/qq/user/?code=DC02BCEE688CE28BA9855C47CDA8929C HTTP/1.1" 500 85053
+INFO 2018-11-29 15:31:21,925 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:31:24,901 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:31:25,096 basehttp 124 "GET /oauth/qq/user/?code=2867C2789572463ABBF8195216D2E658 HTTP/1.1" 500 85053
+INFO 2018-11-29 15:31:54,210 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:31:56,565 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:31:56,761 basehttp 124 "GET /oauth/qq/user/?code=D0D63E7C377875CFF37B9AA4A277970E HTTP/1.1" 500 85053
+INFO 2018-11-29 15:33:35,419 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:33:38,315 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:33:38,536 basehttp 124 "GET /oauth/qq/user/?code=F7B7E6933E877E8F780D3586EC69FDE3 HTTP/1.1" 500 85052
+INFO 2018-11-29 15:34:13,297 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:34:16,015 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:34:16,208 basehttp 124 "GET /oauth/qq/user/?code=5C2FEAD2DA0AEEABF02C3190C2962812 HTTP/1.1" 500 85052
+INFO 2018-11-29 15:35:15,446 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:35:17,970 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:35:18,149 basehttp 124 "GET /oauth/qq/user/?code=AA2474D727A89682B503DDF20B744B9A HTTP/1.1" 500 85053
+INFO 2018-11-29 15:37:09,156 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:37:12,117 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:37:12,285 basehttp 124 "GET /oauth/qq/user/?code=52668C1E7091EEEDBEB14317DC4A1F4C HTTP/1.1" 500 85053
+INFO 2018-11-29 15:37:51,256 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:37:56,081 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 37, in get
+    openid = dict(openid)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+ERROR 2018-11-29 15:37:56,251 basehttp 124 "GET /oauth/qq/user/?code=2F4B566AC64167D43AE617AAC6BCE65F HTTP/1.1" 500 18384
+INFO 2018-11-29 15:39:15,217 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:39:18,434 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:39:18,650 basehttp 124 "GET /oauth/qq/user/?code=9C6D2BB556768352C2437D8E2665196E HTTP/1.1" 500 85052
+INFO 2018-11-29 15:39:44,568 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:39:47,415 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 37, in get
+    print(dict(openid))
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+ERROR 2018-11-29 15:39:47,640 basehttp 124 "GET /oauth/qq/user/?code=94E86D5DB5566A5C63FC34563726AD4B HTTP/1.1" 500 18382
+INFO 2018-11-29 15:40:28,158 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:40:30,636 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:40:30,864 basehttp 124 "GET /oauth/qq/user/?code=43C43A65CB02DBBFB84679D917FDACB2 HTTP/1.1" 500 85053
+INFO 2018-11-29 15:41:49,898 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:41:52,176 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 40, in get
+    openid = openid.get("openid")
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2018-11-29 15:41:52,318 basehttp 124 "GET /oauth/qq/user/?code=799ACBE84B5450EF6C0C383012D327BA HTTP/1.1" 500 18339
+ERROR 2018-11-29 15:42:31,824 basehttp 124 "GET /oauth/qq/user/?code=799ACBE84B5450EF6C0C383012D327BA HTTP/1.1" 503 29
+INFO 2018-11-29 15:42:35,722 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:42:37,826 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 40, in get
+    openid = dict(openid)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+ERROR 2018-11-29 15:42:37,982 basehttp 124 "GET /oauth/qq/user/?code=478E9189ED4296425F050088F4D75725 HTTP/1.1" 500 18384
+INFO 2018-11-29 15:43:39,752 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:43:42,516 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:43:42,710 basehttp 124 "GET /oauth/qq/user/?code=FEB2B4D8C26CBE38EF27E3C8401CA63A HTTP/1.1" 500 85053
+INFO 2018-11-29 15:44:17,468 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:44:20,400 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:44:20,616 basehttp 124 "GET /oauth/qq/user/?code=D352A3CF1C507FF726B1931A87508738 HTTP/1.1" 500 85053
+INFO 2018-11-29 15:45:08,715 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:45:11,888 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:45:12,092 basehttp 124 "GET /oauth/qq/user/?code=0E0937BB86EB933B3FC89048FAF9B3BD HTTP/1.1" 500 85053
+INFO 2018-11-29 15:46:16,454 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 15:46:19,196 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 15:46:19,402 basehttp 124 "GET /oauth/qq/user/?code=EEE6DB03B8ACBE374F9195B8B8549DA5 HTTP/1.1" 500 85053
+INFO 2018-11-29 17:06:00,526 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 17:06:03,891 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-29 17:06:04,106 basehttp 124 "GET /oauth/qq/user/?code=0380FCA774EF4F9B73DDB3A3546E945B HTTP/1.1" 500 85053
+ERROR 2018-11-29 17:14:29,802 basehttp 124 "GET /oauth/qq/user/?code=null HTTP/1.1" 503 29
+INFO 2018-11-29 17:25:07,155 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 17:25:09,027 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 30, in get
+    access_token = oauth_user.get_access_token()
+AttributeError: 'OAuthQQUser' object has no attribute 'get_access_token'
+ERROR 2018-11-29 17:25:09,499 basehttp 124 "GET /oauth/qq/user/?code=F53C22209820A91AD8A3DCE1EAE30CC2 HTTP/1.1" 500 18397
+INFO 2018-11-29 17:26:50,388 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 17:26:52,974 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 40, in get
+    qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\query.py", line 379, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 41, in get
+    except OAuthQQUser.DoseNoteExist:
+AttributeError: type object 'OAuthQQUser' has no attribute 'DoseNoteExist'
+ERROR 2018-11-29 17:26:53,137 basehttp 124 "GET /oauth/qq/user/?code=B15AAB90FF310F45EF57B8BCC750A043 HTTP/1.1" 500 18990
+INFO 2018-11-29 17:27:17,054 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+ERROR 2018-11-29 17:27:19,590 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 40, in get
+    qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\query.py", line 379, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 41, in get
+    except OAuthQQUser.DoseNotExist:
+AttributeError: type object 'OAuthQQUser' has no attribute 'DoseNotExist'
+ERROR 2018-11-29 17:27:19,788 basehttp 124 "GET /oauth/qq/user/?code=79B9414B8139E8B1F1C52F25D79667D8 HTTP/1.1" 500 18987
+INFO 2018-11-29 17:27:59,868 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-29 17:28:02,207 basehttp 124 "GET /oauth/qq/user/?code=19FCDF12ABAE3C8106247FA5F00782C3 HTTP/1.1" 200 51
+INFO 2018-11-29 17:28:02,252 basehttp 124 "GET /image_codes/409b8567-3750-4a75-b71e-870d987132bb/ HTTP/1.1" 200 3321
+ERROR 2018-11-29 17:28:16,471 basehttp 124 "GET /oauth/qq/user/?code=19FCDF12ABAE3C8106247FA5F00782C3 HTTP/1.1" 503 29
+INFO 2018-11-29 17:28:52,754 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-29 17:28:58,896 basehttp 124 "GET /oauth/qq/user/?code=F22A00B26989926782D959B0E3FA7765 HTTP/1.1" 200 51
+INFO 2018-11-29 17:28:58,928 basehttp 124 "GET /image_codes/bd55d211-393b-4f6b-849c-029e27ef4cba/ HTTP/1.1" 200 3062
+INFO 2018-11-29 17:41:40,504 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-29 17:41:43,884 basehttp 124 "GET /oauth/qq/user/?code=96BD26A4DB7A217F992F5157EF8F9B23 HTTP/1.1" 200 51
+INFO 2018-11-29 17:41:43,930 basehttp 124 "GET /image_codes/9be53b2f-3302-471e-83bd-9ee5be342165/ HTTP/1.1" 200 2999
+INFO 2018-11-29 17:45:08,798 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-29 17:45:13,688 basehttp 124 "GET /oauth/qq/user/?code=D958EE45EF1D1B051A41B668AB59BC96 HTTP/1.1" 200 233
+INFO 2018-11-29 17:45:13,720 basehttp 124 "GET /image_codes/d43ddab5-a4da-4623-825a-4f015e947244/ HTTP/1.1" 200 3151
