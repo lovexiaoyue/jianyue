@@ -2826,3 +2826,294 @@ INFO 2018-11-30 14:53:52,552 basehttp 124 "GET /user/ HTTP/1.1" 200 106
 INFO 2018-11-30 14:53:52,572 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
 WARNING 2018-11-30 14:53:52,590 base 152 Not Found: /browse_histories/
 WARNING 2018-11-30 14:53:52,591 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 15:22:49,033 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 15:22:49,046 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+INFO 2018-11-30 15:22:49,057 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 15:22:49,069 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 15:22:49,071 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 15:22:49,976 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+ERROR 2018-11-30 15:22:50,002 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:22:50,183 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+INFO 2018-11-30 15:23:20,275 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+WARNING 2018-11-30 15:23:20,324 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 15:23:20,328 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+ERROR 2018-11-30 15:23:21,082 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:23:21,251 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+ERROR 2018-11-30 15:23:44,168 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:23:44,333 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+ERROR 2018-11-30 15:24:16,756 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:24:16,914 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+ERROR 2018-11-30 15:25:23,902 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:25:24,274 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+ERROR 2018-11-30 15:26:30,097 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+TypeError: generate_verify_email_url() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:26:30,270 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19112
+INFO 2018-11-30 15:27:12,930 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+WARNING 2018-11-30 15:27:25,207 base 152 Not Found: /emails/verification/
+WARNING 2018-11-30 15:27:25,209 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2MjgzMSwiZXhwIjoxNTQzNTYzNDMxfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.pkLFvemo_ybtNTQnI5CzkjIYZhZ3aKeAjEI1bXVBV5oP4UE1jd-p9ED8joUr7axeXxJ_ODbfDo7WJ-fj-IYVRA HTTP/1.1" 404 3950
+ERROR 2018-11-30 15:29:28,929 exception 135 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\views.py", line 46, in get
+    user = User.check_verify_email(token=token)
+AttributeError: type object 'User' has no attribute 'check_verify_email'
+ERROR 2018-11-30 15:29:29,132 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2MjgzMSwiZXhwIjoxNTQzNTYzNDMxfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.pkLFvemo_ybtNTQnI5CzkjIYZhZ3aKeAjEI1bXVBV5oP4UE1jd-p9ED8joUr7axeXxJ_ODbfDo7WJ-fj-IYVRA HTTP/1.1" 500 19202
+INFO 2018-11-30 15:29:31,912 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 15:29:31,965 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+INFO 2018-11-30 15:29:31,977 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 15:29:31,990 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 15:29:31,992 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3893
+INFO 2018-11-30 15:29:33,122 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-11-30 15:29:33,575 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+ERROR 2018-11-30 15:29:42,500 exception 135 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\views.py", line 46, in get
+    user = User.check_verify_email(token=token)
+AttributeError: type object 'User' has no attribute 'check_verify_email'
+ERROR 2018-11-30 15:29:42,542 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2Mjk3MywiZXhwIjoxNTQzNTYzNTczfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.8UhhoRm1LWi_Nsi4YuHYpkPYgyFrjbVwHfT-u7OkeQFr_77WrAP-wRiqieXmpL9sSrLXKYxM2kADvYqRZeNcXg HTTP/1.1" 500 19203
+ERROR 2018-11-30 15:30:16,705 exception 135 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\views.py", line 46, in get
+    user = User.check_verify_email_token(token=token)
+TypeError: check_verify_email_token() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:30:16,959 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2Mjk3MywiZXhwIjoxNTQzNTYzNTczfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.8UhhoRm1LWi_Nsi4YuHYpkPYgyFrjbVwHfT-u7OkeQFr_77WrAP-wRiqieXmpL9sSrLXKYxM2kADvYqRZeNcXg HTTP/1.1" 500 19233
+ERROR 2018-11-30 15:30:35,501 exception 135 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\views.py", line 46, in get
+    user = User.check_verify_email_token(token=token)
+TypeError: check_verify_email_token() missing 1 required positional argument: 'self'
+ERROR 2018-11-30 15:30:35,776 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2Mjk3MywiZXhwIjoxNTQzNTYzNTczfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.8UhhoRm1LWi_Nsi4YuHYpkPYgyFrjbVwHfT-u7OkeQFr_77WrAP-wRiqieXmpL9sSrLXKYxM2kADvYqRZeNcXg HTTP/1.1" 500 19233
+INFO 2018-11-30 15:31:08,016 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2Mjk3MywiZXhwIjoxNTQzNTYzNTczfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.8UhhoRm1LWi_Nsi4YuHYpkPYgyFrjbVwHfT-u7OkeQFr_77WrAP-wRiqieXmpL9sSrLXKYxM2kADvYqRZeNcXg HTTP/1.1" 200 16
+INFO 2018-11-30 15:31:31,526 basehttp 124 "GET /user/ HTTP/1.1" 200 105
+WARNING 2018-11-30 15:31:31,536 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 15:31:31,538 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3893
