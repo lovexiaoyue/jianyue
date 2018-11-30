@@ -3,6 +3,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework import status
 from rest_framework_jwt.settings import api_settings
 from .utils import OAuthQQ,QQUser
+from . import serializers
 from rest_framework.response import Response
 
 from .models import OAuthQQUser
@@ -18,7 +19,7 @@ class OAuthQQURLView(APIView):
         auth_url = oauth.get_auth_url()
 
         return Response({"auth_url":auth_url})
-class OAuthQQUserView(APIView):
+class OAuthQQUserView(GenericAPIView):
     """
     QQ登录用户
     """
@@ -53,7 +54,29 @@ class OAuthQQUserView(APIView):
             })
             return response
 
-class CreateQQUserView(GenericAPIView):
+
     """
     创建QQ登录用户信息
     """
+    serializer_class = serializers.OAuthQQUserSerializer
+    def post(self, request):
+        """
+        保存QQ登录用户信息
+        """
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        # 生成token
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        response = Response({
+            "token":token,
+            "user_id":user.id,
+            "username":user.username
+        })
+        return response

@@ -2310,3 +2310,244 @@ INFO 2018-11-29 17:41:43,930 basehttp 124 "GET /image_codes/9be53b2f-3302-471e-8
 INFO 2018-11-29 17:45:08,798 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
 INFO 2018-11-29 17:45:13,688 basehttp 124 "GET /oauth/qq/user/?code=D958EE45EF1D1B051A41B668AB59BC96 HTTP/1.1" 200 233
 INFO 2018-11-29 17:45:13,720 basehttp 124 "GET /image_codes/d43ddab5-a4da-4623-825a-4f015e947244/ HTTP/1.1" 200 3151
+INFO 2018-11-30 09:05:31,296 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 09:05:34,486 basehttp 124 "GET /oauth/qq/user/?code=714DEBD2003593665C438A71B4E4BE0A HTTP/1.1" 200 233
+INFO 2018-11-30 09:05:34,532 basehttp 124 "GET /image_codes/4cf82c78-73ab-4e10-828e-2882317258f6/ HTTP/1.1" 200 3257
+ERROR 2018-11-30 10:13:14,488 basehttp 124 "GET /oauth/qq/user/?code=714DEBD2003593665C438A71B4E4BE0A HTTP/1.1" 503 29
+INFO 2018-11-30 11:22:34,062 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:22:37,055 basehttp 124 "GET /oauth/qq/user/?code=8B2EE3B76B2D1AC7536240C9DD6A179B HTTP/1.1" 200 233
+INFO 2018-11-30 11:22:37,104 basehttp 124 "GET /image_codes/cdc55878-73a1-445a-bcdf-eda622218071/ HTTP/1.1" 200 2746
+INFO 2018-11-30 11:22:57,928 basehttp 124 "GET /sms_codes/18389266585/?text=kmuw&image_code_id=cdc55878-73a1-445a-bcdf-eda622218071 HTTP/1.1" 200 21
+ERROR 2018-11-30 11:24:39,450 basehttp 124 "GET /oauth/qq/user/?code=8B2EE3B76B2D1AC7536240C9DD6A179B HTTP/1.1" 503 29
+INFO 2018-11-30 11:24:46,996 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:24:48,967 basehttp 124 "GET /oauth/qq/user/?code=8BD595647EEAD47D86B3BE9B13B7438D HTTP/1.1" 200 233
+INFO 2018-11-30 11:24:48,992 basehttp 124 "GET /image_codes/6a8c81c5-1c2b-4cff-be70-9df1db5e0afe/ HTTP/1.1" 200 3073
+INFO 2018-11-30 11:24:59,655 basehttp 124 "GET /sms_codes/18389266585/?text=4oiy&image_code_id=6a8c81c5-1c2b-4cff-be70-9df1db5e0afe HTTP/1.1" 200 21
+INFO 2018-11-30 11:25:09,500 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-11-30 11:25:09,509 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+WARNING 2018-11-30 11:26:13,374 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:26:16,620 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:26:39,207 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+ERROR 2018-11-30 11:27:00,932 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
+ERROR 2018-11-30 11:27:01,115 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 84959
+ERROR 2018-11-30 11:27:18,129 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
+ERROR 2018-11-30 11:27:18,192 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 84959
+INFO 2018-11-30 11:27:58,507 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-11-30 11:31:06,578 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:31:08,849 basehttp 124 "GET /oauth/qq/user/?code=2E2EBB3B5C6417CFE7E74375967BCD6D HTTP/1.1" 200 233
+INFO 2018-11-30 11:31:08,897 basehttp 124 "GET /image_codes/b6035f24-b5f1-4bc3-9283-8f8d539df12d/ HTTP/1.1" 200 3257
+INFO 2018-11-30 11:31:17,218 basehttp 124 "GET /sms_codes/18389266585/?text=okme&image_code_id=b6035f24-b5f1-4bc3-9283-8f8d539df12d HTTP/1.1" 200 21
+INFO 2018-11-30 11:31:23,116 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-11-30 11:31:23,179 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 68, in post
+    user = serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 53, in create
+    openid = OAuthQQUser.objects.get(openid=openid)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\query.py", line 379, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+ERROR 2018-11-30 11:31:23,357 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18886
+INFO 2018-11-30 11:33:22,267 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:33:24,819 basehttp 124 "GET /oauth/qq/user/?code=B5C1F50EB7C752F4E58DF9DC63B09B1B HTTP/1.1" 200 233
+INFO 2018-11-30 11:33:24,851 basehttp 124 "GET /image_codes/9b663bc7-8b15-40d9-8d8d-762e0b5f43d1/ HTTP/1.1" 200 3192
+WARNING 2018-11-30 11:33:34,050 basehttp 124 "GET /sms_codes/18389266585/?text=evsv&image_code_id=9b663bc7-8b15-40d9-8d8d-762e0b5f43d1 HTTP/1.1" 400 46
+INFO 2018-11-30 11:33:37,082 basehttp 124 "GET /image_codes/3caa7cd0-9ff7-43d4-884c-3384f4821de9/ HTTP/1.1" 200 3043
+INFO 2018-11-30 11:33:43,227 basehttp 124 "GET /sms_codes/18389266585/?text=dtov&image_code_id=3caa7cd0-9ff7-43d4-884c-3384f4821de9 HTTP/1.1" 200 21
+INFO 2018-11-30 11:33:49,509 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-11-30 11:33:49,582 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 54, in create
+    openid = OAuthQQUser.objects.get(openid=openid)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\query.py", line 379, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 68, in post
+    user = serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 55, in create
+    except OAuthQQUser.DoseNotExist:
+AttributeError: type object 'OAuthQQUser' has no attribute 'DoseNotExist'
+ERROR 2018-11-30 11:33:49,779 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19201
+INFO 2018-11-30 11:35:08,584 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:35:11,584 basehttp 124 "GET /oauth/qq/user/?code=22F8E9F5C829C5C342A30933D166310E HTTP/1.1" 200 233
+INFO 2018-11-30 11:35:11,627 basehttp 124 "GET /image_codes/068e9c23-e4a8-4fa3-82cd-6b4fbe321bb4/ HTTP/1.1" 200 3099
+INFO 2018-11-30 11:35:19,897 basehttp 124 "GET /sms_codes/18389266585/?text=jcud&image_code_id=068e9c23-e4a8-4fa3-82cd-6b4fbe321bb4 HTTP/1.1" 200 21
+INFO 2018-11-30 11:35:22,352 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2018-11-30 11:35:22,456 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-11-30 11:35:43,471 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:35:45,339 basehttp 124 "GET /oauth/qq/user/?code=71086DBD7298FCCFDDC989604B844E4C HTTP/1.1" 200 233
+INFO 2018-11-30 11:35:45,370 basehttp 124 "GET /image_codes/b553b175-0242-4f99-9cdb-f6ac9782f21e/ HTTP/1.1" 200 3465
+WARNING 2018-11-30 11:36:02,577 basehttp 124 "GET /sms_codes/18389266585/?text=bmuu&image_code_id=b553b175-0242-4f99-9cdb-f6ac9782f21e HTTP/1.1" 400 43
+INFO 2018-11-30 11:36:04,702 basehttp 124 "GET /image_codes/3dfbc9b9-4a37-471f-bb50-f816dc507fe0/ HTTP/1.1" 200 3291
+WARNING 2018-11-30 11:36:08,697 basehttp 124 "GET /sms_codes/18389266585/?text=wmrl&image_code_id=3dfbc9b9-4a37-471f-bb50-f816dc507fe0 HTTP/1.1" 400 43
+INFO 2018-11-30 11:36:15,634 basehttp 124 "GET /image_codes/2f118b35-628a-4ded-bccf-b5a3b6f0a2d5/ HTTP/1.1" 200 3163
+INFO 2018-11-30 11:36:21,327 basehttp 124 "GET /sms_codes/18389266585/?text=k7fb&image_code_id=2f118b35-628a-4ded-bccf-b5a3b6f0a2d5 HTTP/1.1" 200 21
+INFO 2018-11-30 11:36:26,101 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-11-30 11:36:26,166 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:34,818 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:35,833 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:36,393 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:36,561 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:36,760 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:36,903 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:37,034 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:37,397 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:37,543 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:37,714 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:37,949 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:38,044 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:38,305 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:38,505 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:38,656 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+WARNING 2018-11-30 11:36:38,816 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 37
+INFO 2018-11-30 11:37:11,553 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-11-30 11:37:14,611 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:37:16,599 basehttp 124 "GET /oauth/qq/user/?code=B718A35E3A3AC275657335A0BAB85EF4 HTTP/1.1" 200 211
+INFO 2018-11-30 11:37:27,441 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:37:29,948 basehttp 124 "GET /oauth/qq/user/?code=4B97580F06F709C215FB13A6B02D67A2 HTTP/1.1" 200 211
+INFO 2018-11-30 11:52:18,771 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 198
+INFO 2018-11-30 11:52:21,142 basehttp 124 "GET /oauth/qq/user/?code=958EBBC212456498C923F6CECAC55761 HTTP/1.1" 200 233
+INFO 2018-11-30 11:52:21,172 basehttp 124 "GET /image_codes/09a61d82-ee17-4615-bec3-fed295a40056/ HTTP/1.1" 200 3328
+INFO 2018-11-30 11:52:33,546 basehttp 124 "GET /sms_codes/18489266585/?text=ixza&image_code_id=09a61d82-ee17-4615-bec3-fed295a40056 HTTP/1.1" 200 18
+INFO 2018-11-30 11:52:38,130 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-11-30 11:52:38,154 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 34, in validate
+    user = User.objects.get(mobile=mobile)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\db\models\query.py", line 379, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 67, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 35, in validate
+    except User.DoseNotExist:
+AttributeError: type object 'User' has no attribute 'DoseNotExist'
+ERROR 2018-11-30 11:52:38,357 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19356
+ERROR 2018-11-30 11:53:43,425 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\views.py", line 68, in post
+    user = serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\oauth\serializers.py", line 49, in create
+    password=user.set_password(validated_data['password']),
+AttributeError: 'NoneType' object has no attribute 'set_password'
+ERROR 2018-11-30 11:53:43,649 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18608
