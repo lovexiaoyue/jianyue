@@ -2551,3 +2551,278 @@ Traceback (most recent call last):
     password=user.set_password(validated_data['password']),
 AttributeError: 'NoneType' object has no attribute 'set_password'
 ERROR 2018-11-30 11:53:43,649 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18608
+INFO 2018-11-30 11:54:22,401 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 221
+INFO 2018-11-30 12:12:33,714 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-11-30 12:12:33,776 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+WARNING 2018-11-30 12:12:41,952 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-11-30 12:12:49,554 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 221
+INFO 2018-11-30 12:17:42,244 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 12:17:42,312 basehttp 124 "GET /user/ HTTP/1.1" 200 89
+INFO 2018-11-30 12:17:42,367 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 12:17:42,388 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 12:17:42,391 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3568
+INFO 2018-11-30 12:18:57,726 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-11-30 12:18:59,689 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+WARNING 2018-11-30 12:18:59,746 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 12:18:59,748 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3568
+INFO 2018-11-30 12:19:05,288 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-11-30 12:19:05,296 base 152 Not Found: /emails/
+WARNING 2018-11-30 12:19:05,299 basehttp 124 "PUT /emails/ HTTP/1.1" 404 3538
+INFO 2018-11-30 12:19:48,370 basehttp 124 "GET /oauth/qq/authorization/?next=/user_center_info.html HTTP/1.1" 200 198
+INFO 2018-11-30 12:19:51,338 basehttp 124 "GET /oauth/qq/user/?code=500214B2B79BB1A1F8FC2E69601C0DF1 HTTP/1.1" 200 221
+INFO 2018-11-30 12:19:53,504 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 12:19:53,603 basehttp 124 "GET /user/ HTTP/1.1" 200 89
+INFO 2018-11-30 12:19:53,653 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 12:19:53,669 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 12:19:53,671 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3568
+INFO 2018-11-30 12:19:57,864 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-11-30 12:19:57,872 base 152 Not Found: /emails/
+WARNING 2018-11-30 12:19:57,873 basehttp 124 "PUT /emails/ HTTP/1.1" 404 3538
+INFO 2018-11-30 14:11:46,458 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-11-30 14:11:46,487 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+WARNING 2018-11-30 14:18:37,299 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+WARNING 2018-11-30 14:19:41,889 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+WARNING 2018-11-30 14:21:29,600 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+INFO 2018-11-30 14:21:59,785 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-11-30 14:21:59,801 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+WARNING 2018-11-30 14:25:33,739 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+WARNING 2018-11-30 14:25:39,680 basehttp 124 "PUT /emails/ HTTP/1.1" 405 45
+INFO 2018-11-30 14:26:29,043 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+INFO 2018-11-30 14:27:27,715 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 14:27:27,732 basehttp 124 "GET /user/ HTTP/1.1" 200 89
+INFO 2018-11-30 14:27:27,742 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 14:27:27,751 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:27:27,753 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+ERROR 2018-11-30 14:27:46,093 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 67, in update
+    instance = self.get_object()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 85, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 68, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'EmailView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR 2018-11-30 14:27:46,278 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19017
+INFO 2018-11-30 14:28:02,602 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+INFO 2018-11-30 14:47:56,401 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 14:47:56,435 basehttp 124 "GET /user/ HTTP/1.1" 200 89
+INFO 2018-11-30 14:47:56,451 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 14:47:56,469 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:47:56,472 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 14:48:00,079 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+ERROR 2018-11-30 14:48:00,112 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\models.py", line 23, in generate_verify_email_url
+    serializer = JWTSerializer(settings.SECERT_KEY,expires_in=constants.VERIFY_EMAIL_TOKEN_EXPIRES)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\conf\__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SECERT_KEY'
+ERROR 2018-11-30 14:48:00,374 basehttp 124 "PUT /emails/ HTTP/1.1" 500 19425
+INFO 2018-11-30 14:48:31,401 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+WARNING 2018-11-30 14:48:31,424 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:48:31,428 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+ERROR 2018-11-30 14:48:32,047 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\models.py", line 25, in generate_verify_email_url
+    token = serializer.dumps(serializer).decode()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 136, in dumps
+    return signer.sign(self.dump_payload(header, obj))
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 100, in dump_payload
+    self.serializer.dumps(obj, **self.serializer_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\_json.py", line 18, in dumps
+    return json.dumps(obj, **kwargs)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'TimedJSONWebSignatureSerializer' is not JSON serializable
+ERROR 2018-11-30 14:48:32,232 basehttp 124 "PUT /emails/ HTTP/1.1" 500 20284
+ERROR 2018-11-30 14:48:37,620 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\models.py", line 25, in generate_verify_email_url
+    token = serializer.dumps(serializer).decode()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 136, in dumps
+    return signer.sign(self.dump_payload(header, obj))
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 100, in dump_payload
+    self.serializer.dumps(obj, **self.serializer_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\_json.py", line 18, in dumps
+    return json.dumps(obj, **kwargs)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'TimedJSONWebSignatureSerializer' is not JSON serializable
+ERROR 2018-11-30 14:48:37,665 basehttp 124 "PUT /emails/ HTTP/1.1" 500 20284
+INFO 2018-11-30 14:49:15,300 basehttp 124 "GET /user/ HTTP/1.1" 200 89
+WARNING 2018-11-30 14:49:15,345 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:49:15,347 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+ERROR 2018-11-30 14:49:18,081 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\mixins.py", line 80, in perform_update
+    serializer.save()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\serializers.py", line 120, in update
+    url = instance.generate_verify_email_url()
+  File "C:\Users\zhidekan2\Desktop\jianyue\jianyue\jianyue\apps\users\models.py", line 25, in generate_verify_email_url
+    token = serializer.dumps(serializer).decode()
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 136, in dumps
+    return signer.sign(self.dump_payload(header, obj))
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\jws.py", line 100, in dump_payload
+    self.serializer.dumps(obj, **self.serializer_kwargs)
+  File "C:\Users\zhidekan2\venv\lib\site-packages\itsdangerous\_json.py", line 18, in dumps
+    return json.dumps(obj, **kwargs)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\zhidekan2\appdata\local\programs\python\python36\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'TimedJSONWebSignatureSerializer' is not JSON serializable
+ERROR 2018-11-30 14:49:18,128 basehttp 124 "PUT /emails/ HTTP/1.1" 500 20284
+INFO 2018-11-30 14:50:45,984 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+INFO 2018-11-30 14:50:53,281 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+WARNING 2018-11-30 14:50:53,318 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:50:53,320 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 14:50:55,307 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+INFO 2018-11-30 14:52:03,337 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+WARNING 2018-11-30 14:52:03,369 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:52:03,371 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 14:52:05,210 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+INFO 2018-11-30 14:53:09,978 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+WARNING 2018-11-30 14:53:10,002 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:53:10,005 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2018-11-30 14:53:11,810 basehttp 124 "PUT /emails/ HTTP/1.1" 200 37
+WARNING 2018-11-30 14:53:23,265 base 152 Not Found: /emails/verification/
+WARNING 2018-11-30 14:53:23,267 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU0MzU2MDc5MCwiZXhwIjoxNTQzNTYxMzkwfQ.eyJ1c2VyX2lkIjoxMCwiZW1haWwiOiIxMDI5NjQ0NjcyQHFxLmNvbSJ9.eZRO3EMWEQ8uGHnZhcU5Z2VMpPXFKps0lh3nT0iwTHqk-03y8bP2tSgKqUjU_jaNLLYhxGLqApBn6gy2S57wSA HTTP/1.1" 404 3950
+INFO 2018-11-30 14:53:52,475 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-30 14:53:52,552 basehttp 124 "GET /user/ HTTP/1.1" 200 106
+INFO 2018-11-30 14:53:52,572 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-11-30 14:53:52,590 base 152 Not Found: /browse_histories/
+WARNING 2018-11-30 14:53:52,591 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3724

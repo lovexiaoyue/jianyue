@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django_redis import get_redis_connection
 from rest_framework_jwt.settings import api_settings
 from .models import User
+from .utils import send_verify_email
 import re
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -97,3 +98,26 @@ class UserDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'mobile', 'email', 'email_active')
+
+class EmailSerialize(serializers.ModelSerializer):
+    """
+    邮箱序列化器
+    """
+    class Meta:
+        model = User
+        fields = ("id","email")
+        extract_kwargs = {
+            "email":{
+                "require":True
+            }
+        }
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data['email']
+        instance.save()
+
+        # 生成email验证url
+        url = instance.generate_verify_email_url()
+        # 发送邮件
+        send_verify_email(instance.email,url)
+        return instance
