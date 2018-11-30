@@ -41,12 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'xadmin',
+    'crispy_forms',
+    'reversion',
+
     'rest_framework',
     'corsheaders',
 
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
-    'oauth.apps.OauthConfig'
+    'oauth.apps.OauthConfig',
+    'goods.apps.GoodsConfig'
 
 ]
 

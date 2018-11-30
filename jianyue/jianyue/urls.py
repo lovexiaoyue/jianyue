@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 # from django.urls import path,include
 from django.conf.urls import url, include
+import xadmin
 urlpatterns = [
-    url('admin/', admin.site.urls),
+    url('xadmin/', include(xadmin.site.urls)),
     url('',include('verifications.urls')),
     url('',include('users.urls')),
     url('',include('oauth.urls'))
